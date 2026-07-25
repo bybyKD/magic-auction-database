@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useRef, useEffect } from 'react';
 import './App.css';
 import GridArea from './components/GridArea';
 import Controls from './components/Controls';
@@ -12,6 +12,7 @@ import gameRules from './data/game_rules.json';
 import { useAppraisals } from './hooks/useAppraisals';
 import { useBoardStats } from './hooks/useBoardStats';
 import { ROWS, COLS } from './logic/constants';
+import { GridHistory } from './logic/gridHistory';
 
 function App() {
   const [grid, setGrid] = useState(
@@ -25,6 +26,9 @@ function App() {
   const [showGuide, setShowGuide] = useState(false);
   const [showML, setShowML] = useState(false);
   const [showLogger, setShowLogger] = useState(false);
+  const [selectedShape, setSelectedShape] = useState(null);
+  const [undoCount, setUndoCount] = useState(0);
+  const [redoCount, setRedoCount] = useState(0);
 
   const [clues, setClues] = useState({
     colorQuantities: {},
@@ -43,6 +47,8 @@ function App() {
     aiConfidence: null,
   });
 
+  const gridHistoryRef = useRef(new GridHistory());
+
   const squareAppraisals = useAppraisals(grid, clues, selectedHouse);
   const stats = useBoardStats(
     squareAppraisals,
@@ -58,9 +64,111 @@ function App() {
   const baselineOpponentBid = stats.totalBoardEV * 0.75;
   const instantWinBid = Math.floor(baselineOpponentBid * instantWinMultiplier);
 
-  const handleClear = useCallback(() => {
-    setGrid(Array(ROWS).fill().map(() => Array(COLS).fill(null)));
+  const refreshHistoryCounts = useCallback(() => {
+    setUndoCount(gridHistoryRef.current.undoStack.length);
+    setRedoCount(gridHistoryRef.current.redoStack.length);
   }, []);
+
+  const handleGridChange = useCallback((newGrid) => {
+    gridHistoryRef.current.push(grid);
+    setGrid(newGrid);
+    refreshHistoryCounts();
+  }, [grid, refreshHistoryCounts]);
+
+  const handleUndo = useCallback(() => {
+    const prev = gridHistoryRef.current.undo(grid);
+    if (prev) {
+      setGrid(prev);
+      refreshHistoryCounts();
+    }
+  }, [grid, refreshHistoryCounts]);
+
+  const handleRedo = useCallback(() => {
+    const next = gridHistoryRef.current.redo(grid);
+    if (next) {
+      setGrid(next);
+      refreshHistoryCounts();
+    }
+  }, [grid, refreshHistoryCounts]);
+
+  const handleClear = useCallback(() => {
+    gridHistoryRef.current.push(grid);
+    setGrid(Array(ROWS).fill().map(() => Array(COLS).fill(null)));
+    refreshHistoryCounts();
+  }, [grid, refreshHistoryCounts]);
+
+  // Keyboard shortcuts
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      // Ignore if typing in an input/textarea
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.tagName === 'SELECT') {
+        return;
+      }
+
+      // Ctrl+Z / Cmd+Z = undo
+      if ((e.ctrlKey || e.metaKey) && !e.shiftKey && e.key === 'z') {
+        e.preventDefault();
+        handleUndo();
+        return;
+      }
+      // Ctrl+Shift+Z / Cmd+Shift+Z or Ctrl+Y = redo
+      if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'z') {
+        e.preventDefault();
+        handleRedo();
+        return;
+      }
+      if ((e.ctrlKey || e.metaKey) && e.key === 'y') {
+        e.preventDefault();
+        handleRedo();
+        return;
+      }
+
+      // Color shortcuts: 1=Bronze, 2=Silver, 3=Gold, 4=Red
+      if (!e.ctrlKey && !e.metaKey && !e.altKey) {
+        switch (e.key) {
+          case '1':
+            setBrushColor('Bronze');
+            setBrushMode('Known');
+            setSelectedShape(null);
+            break;
+          case '2':
+            setBrushColor('White');
+            setBrushMode('Known');
+            setSelectedShape(null);
+            break;
+          case '3':
+            setBrushColor('Gold');
+            setBrushMode('Known');
+            setSelectedShape(null);
+            break;
+          case '4':
+            setBrushColor('Red');
+            setBrushMode('Known');
+            setSelectedShape(null);
+            break;
+          case 'e':
+          case 'E':
+            setBrushMode('Empty');
+            setSelectedShape(null);
+            break;
+          case 'r':
+          case 'R':
+            setBrushMode('Erase');
+            setSelectedShape(null);
+            break;
+          case 'Escape':
+            setSelectedShape(null);
+            setBrushMode('Known');
+            break;
+          default:
+            break;
+        }
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [handleUndo, handleRedo]);
 
   return (
     <div className="app-container">
@@ -117,6 +225,8 @@ function App() {
               setSelectedCommander={setSelectedCommander}
               selectedHouse={selectedHouse}
               setSelectedHouse={setSelectedHouse}
+              selectedShape={selectedShape}
+              setSelectedShape={setSelectedShape}
             />
             <CommanderAssistant
               selectedCommander={selectedCommander}
@@ -163,15 +273,41 @@ function App() {
                   </span>
                 </div>
               </div>
+              <div className="grid-toolbar">
+                <button
+                  className="toolbar-btn"
+                  onClick={handleUndo}
+                  disabled={undoCount === 0}
+                  title="Undo (Ctrl+Z)"
+                >
+                  ↶ Undo
+                </button>
+                <button
+                  className="toolbar-btn"
+                  onClick={handleRedo}
+                  disabled={redoCount === 0}
+                  title="Redo (Ctrl+Shift+Z)"
+                >
+                  ↷ Redo
+                </button>
+                <button className="clear-btn toolbar-btn" onClick={handleClear}>
+                  Clear Board
+                </button>
+                {selectedShape && (
+                  <span className="place-mode-indicator">
+                    Placing {selectedShape} — click grid to place (Esc to cancel)
+                  </span>
+                )}
+              </div>
               <GridArea
                 grid={grid}
                 setGrid={setGrid}
+                onGridChange={handleGridChange}
                 brushMode={brushMode}
                 brushColor={brushColor}
+                selectedShape={selectedShape}
+                setSelectedShape={setSelectedShape}
               />
-              <button className="clear-btn" onClick={handleClear}>
-                Clear Board
-              </button>
             </div>
 
             <div className="results-section">
@@ -192,6 +328,8 @@ function App() {
                 instantWinBid={instantWinBid}
                 aiPredictedBid={stats.aiPredictedBid}
                 aiConfidence={stats.aiConfidence}
+                commanderInfo={stats.commanderInfo}
+                selectedCommander={selectedCommander}
               />
             </div>
           </div>

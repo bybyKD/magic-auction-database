@@ -5,12 +5,18 @@ import commandersData from '../data/commanders.json';
 
 const colors = [
   { name: 'Bronze', css: 'Bronze' },
-  { name: 'Silver', css: 'White' }, // In previous CSS, silver was white
+  { name: 'Silver', css: 'White' },
   { name: 'Gold', css: 'Gold' },
   { name: 'Red', css: 'Red' }
 ];
 
-const Controls = ({ brushMode, setBrushMode, brushColor, setBrushColor, currentRound, setCurrentRound, selectedCommander, setSelectedCommander, selectedHouse, setSelectedHouse }) => {
+const PRESET_SHAPES = [
+  '1x1', '2x1', '1x2', '2x2',
+  '3x1', '1x3', '3x2', '2x3',
+  '3x3', '4x1', '1x4', '4x2',
+];
+
+const Controls = ({ brushMode, setBrushMode, brushColor, setBrushColor, currentRound, setCurrentRound, selectedCommander, setSelectedCommander, selectedHouse, setSelectedHouse, selectedShape, setSelectedShape }) => {
   return (
     <div className="controls-container">
       
@@ -59,11 +65,36 @@ const Controls = ({ brushMode, setBrushMode, brushColor, setBrushColor, currentR
           {colors.map(color => (
             <button
               key={color.name}
-              className={`color-btn ${color.css.toLowerCase()} ${brushColor === color.css && brushMode === 'Known' ? 'selected' : ''}`}
-              onClick={() => { setBrushColor(color.css); setBrushMode('Known'); }}
+              className={`color-btn ${color.css.toLowerCase()} ${brushColor === color.css && brushMode === 'Known' && !selectedShape ? 'selected' : ''}`}
+              onClick={() => { setBrushColor(color.css); setBrushMode('Known'); setSelectedShape(null); }}
               style={{ width: '100%', minHeight: '50px', fontWeight: 'bold' }}
             >
               {color.name}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div className="divider"></div>
+
+      <div className="brush-section">
+        <h3 className="control-title">📐 Quick Shapes</h3>
+        <p style={{ fontSize: '0.8rem', color: '#aaa', marginBottom: '10px' }}>
+          Tap a shape, then <strong>click the grid</strong> to place it instantly!
+        </p>
+        <div className="shape-grid">
+          {PRESET_SHAPES.map(shape => (
+            <button
+              key={shape}
+              className={`shape-btn ${selectedShape === shape ? 'selected' : ''}`}
+              onClick={() => {
+                setBrushColor(brushColor);
+                setBrushMode('Known');
+                setSelectedShape(selectedShape === shape ? null : shape);
+              }}
+              title={`Place ${shape} block`}
+            >
+              {shape}
             </button>
           ))}
         </div>
@@ -76,17 +107,35 @@ const Controls = ({ brushMode, setBrushMode, brushColor, setBrushColor, currentR
         <div className="color-buttons tools-column">
           <button
             className={`color-btn tool-btn ${brushMode === 'Empty' ? 'selected' : ''}`}
-            onClick={() => setBrushMode('Empty')}
+            onClick={() => { setBrushMode('Empty'); setSelectedShape(null); }}
             title="Mark a cell as definitely empty (missed bid)"
           >
             ❌ Mark Empty
           </button>
           <button
             className={`color-btn tool-btn ${brushMode === 'Erase' ? 'selected' : ''}`}
-            onClick={() => setBrushMode('Erase')}
+            onClick={() => { setBrushMode('Erase'); setSelectedShape(null); }}
           >
             🧹 Eraser
           </button>
+        </div>
+      </div>
+
+      <div className="divider"></div>
+
+      <div className="brush-section">
+        <h3 className="control-title">⌨️ Shortcuts</h3>
+        <div className="shortcuts-list">
+          <div className="shortcut-row"><kbd>1</kbd> Bronze</div>
+          <div className="shortcut-row"><kbd>2</kbd> Silver</div>
+          <div className="shortcut-row"><kbd>3</kbd> Gold</div>
+          <div className="shortcut-row"><kbd>4</kbd> Red</div>
+          <div className="shortcut-row"><kbd>E</kbd> Mark Empty</div>
+          <div className="shortcut-row"><kbd>R</kbd> Eraser</div>
+          <div className="shortcut-row"><kbd>Ctrl+Z</kbd> Undo</div>
+          <div className="shortcut-row"><kbd>Ctrl+Shift+Z</kbd> Redo</div>
+          <div className="shortcut-row"><kbd>Esc</kbd> Cancel shape</div>
+          <div className="shortcut-row"><kbd>Right-click</kbd> Delete block</div>
         </div>
       </div>
     </div>

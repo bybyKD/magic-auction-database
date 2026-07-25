@@ -15,6 +15,8 @@ const ResultsPanel = ({
   instantWinBid,
   aiPredictedBid,
   aiConfidence,
+  commanderInfo,
+  selectedCommander,
 }) => {
   const [expandedIndices, setExpandedIndices] = useState(new Set());
 
@@ -57,9 +59,27 @@ const ResultsPanel = ({
       <div className="master-dashboard">
         <div className="master-header">
           <h3>Master Board Summary</h3>
-          <span className="group-count-badge">
-            {appraisals.length} Item Group(s)
-          </span>
+          <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+            {selectedCommander && selectedCommander !== 'None' && commanderInfo && (
+              <span
+                className="commander-badge"
+                style={{
+                  padding: '4px 10px',
+                  borderRadius: '12px',
+                  fontSize: '0.75rem',
+                  fontWeight: 600,
+                  background: `${commanderInfo.infoScore > 0.3 ? 'rgba(16,185,129,0.15)' : 'rgba(239,68,68,0.15)'}`,
+                  border: `1px solid ${commanderInfo.infoScore > 0.3 ? 'rgba(16,185,129,0.3)' : 'rgba(239,68,68,0.3)'}`,
+                  color: commanderInfo.infoScore > 0.3 ? '#10b981' : '#ef4444',
+                }}
+              >
+                {selectedCommander} — {Math.round(commanderInfo.infoScore * 100)}% Info
+              </span>
+            )}
+            <span className="group-count-badge">
+              {appraisals.length} Item Group(s)
+            </span>
+          </div>
         </div>
 
         <div className="master-stats-grid">

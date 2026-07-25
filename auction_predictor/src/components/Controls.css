@@ -103,3 +103,64 @@
 .tool-btn:hover, .tool-btn.selected { background: rgba(255,255,255,0.15); border-color: white; }
 .paint-btn { border-color: rgba(59, 130, 246, 0.5); }
 .paint-btn:hover, .paint-btn.selected { background: rgba(59, 130, 246, 0.4); border-color: #3b82f6; }
+
+/* Shape palette grid */
+.shape-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+}
+
+.shape-btn {
+  padding: 8px 4px;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  background: rgba(255,255,255,0.03);
+  color: var(--text-main);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.shape-btn:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.2);
+  transform: translateY(-1px);
+}
+
+.shape-btn.selected {
+  background: rgba(59, 130, 246, 0.3);
+  border-color: #3b82f6;
+  color: #60a5fa;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+}
+
+/* Shortcuts list */
+.shortcuts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.shortcut-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.shortcut-row kbd {
+  display: inline-block;
+  padding: 2px 6px;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 4px;
+  background: rgba(255,255,255,0.05);
+  font-family: monospace;
+  font-size: 0.7rem;
+  color: var(--text-main);
+  min-width: 24px;
+  text-align: center;
+}
