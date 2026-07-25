@@ -4,7 +4,7 @@ import {
   GENERIC_COLOR_EVS,
 } from './constants';
 
-export function computeBoardStats(appraisals, clues) {
+export function computeBoardStats(appraisals, clues, commanderInfoScore = 0) {
   let totalRevealedEV = 0;
   let paintedBlocksCount = 0;
 
@@ -22,6 +22,7 @@ export function computeBoardStats(appraisals, clues) {
     }
   });
 
+  // Exact value clue adjustments
   let extraExactValue = 0;
   if (clues && clues.exactValues) {
     Object.keys(clues.exactValues).forEach((color) => {
@@ -33,8 +34,10 @@ export function computeBoardStats(appraisals, clues) {
     });
   }
 
+  // Quantity-based hidden value with conditional distributions
   let extraQuantityValue = 0;
   let remainingQuantityBlocks = 0;
+  const colorQtyRemaining = {};
 
   if (clues && clues.colorQuantities) {
     Object.keys(clues.colorQuantities).forEach((color) => {
@@ -43,6 +46,7 @@ export function computeBoardStats(appraisals, clues) {
         const paintedQty = paintedColorCounts[color] || 0;
         const remainingQty = Math.max(0, requiredQty - paintedQty);
         if (remainingQty > 0) {
+          colorQtyRemaining[color] = remainingQty;
           extraQuantityValue +=
             remainingQty * (GENERIC_COLOR_EVS[color] || 4000);
           remainingQuantityBlocks += remainingQty * 3;
@@ -56,8 +60,14 @@ export function computeBoardStats(appraisals, clues) {
     TOTAL_SPAWN_BLOCKS - paintedBlocksCount - remainingQuantityBlocks
   );
 
+  // Commander info discount: high-info commanders reduce hidden EV uncertainty.
+  // If the commander has revealed info about hidden blocks, those blocks are
+  // partially or fully accounted for in the revealed + quantity deductions.
+  // We apply a reduction to the generic hidden estimate based on info score.
+  const commanderDiscount = 1.0 - (commanderInfoScore * 0.3);
+
   let hiddenBoardEV =
-    remainingGenericHiddenBlocks * AVERAGE_VALUE_PER_BLOCK;
+    remainingGenericHiddenBlocks * AVERAGE_VALUE_PER_BLOCK * commanderDiscount;
   hiddenBoardEV += extraExactValue + extraQuantityValue;
 
   let totalBoardEV = totalRevealedEV + hiddenBoardEV;
@@ -73,5 +83,6 @@ export function computeBoardStats(appraisals, clues) {
     totalBoardEV,
     paintedBlocksCount,
     remainingGenericHiddenBlocks,
+    commanderInfoScore,
   };
 }

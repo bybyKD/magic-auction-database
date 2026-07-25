@@ -12,11 +12,11 @@ export class AuctionBrain {
   buildModel() {
     const model = tf.sequential();
     
-    // We have 5 input features: Round, House, PaintedBlocks, RevealedEV, HiddenEV (all normalized)
-    model.add(tf.layers.dense({ units: 16, inputShape: [5], activation: 'relu' }));
+    // 6 input features: Round, House, PaintedBlocks, RevealedEV, HiddenEV, CommanderInfoScore
+    model.add(tf.layers.dense({ units: 16, inputShape: [6], activation: 'relu' }));
     model.add(tf.layers.dense({ units: 16, activation: 'relu' }));
     
-    // 2 output features: Predicted Bid, Predicted Actual Value (normalized)
+    // 2 outputs: Predicted Bid, Predicted Actual Value (normalized)
     model.add(tf.layers.dense({ units: 2, activation: 'linear' }));
     
     model.compile({
@@ -37,8 +37,14 @@ export class AuctionBrain {
       return;
     }
 
-    // Convert dataset to tensors
-    const inputs = data.map(d => [d.input.round, d.input.house, d.input.paintedBlocks, d.input.revealedEV, d.input.hiddenEV]);
+    const inputs = data.map(d => [
+      d.input.round,
+      d.input.house,
+      d.input.paintedBlocks,
+      d.input.revealedEV,
+      d.input.hiddenEV,
+      d.input.commanderInfoScore
+    ]);
     const outputs = data.map(d => [d.output.bid, d.output.actualValue]);
 
     const inputTensor = tf.tensor2d(inputs);
@@ -66,11 +72,18 @@ export class AuctionBrain {
     }
   }
 
-  predict(round, houseNorm, paintedBlocksNorm, revealedEVNorm, hiddenEVNorm) {
+  predict(round, houseNorm, paintedBlocksNorm, revealedEVNorm, hiddenEVNorm, commanderInfoScore = 0) {
     if (!this.isTrained) return null;
     
     return tf.tidy(() => {
-      const inputTensor = tf.tensor2d([[round / 5.0, houseNorm, paintedBlocksNorm, revealedEVNorm, hiddenEVNorm]]);
+      const inputTensor = tf.tensor2d([[
+        round / 5.0,
+        houseNorm,
+        paintedBlocksNorm,
+        revealedEVNorm,
+        hiddenEVNorm,
+        commanderInfoScore
+      ]]);
       const prediction = this.model.predict(inputTensor);
       const predictedData = prediction.dataSync();
       return {

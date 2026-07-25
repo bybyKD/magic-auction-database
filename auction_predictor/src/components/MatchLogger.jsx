@@ -17,7 +17,8 @@ const MatchLogger = ({ onClose, currentRound, selectedHouse, boardStats }) => {
       boardStats?.totalRevealedEV || 0,
       boardStats?.hiddenBoardEV || 0,
       parseFloat(winningBid),
-      parseFloat(actualValue)
+      parseFloat(actualValue),
+      boardStats?.commanderInfo?.infoScore || 0
     );
     
     setSaved(true);

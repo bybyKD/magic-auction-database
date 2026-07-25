@@ -1,5 +1,6 @@
 import { useMemo, useEffect } from 'react';
 import { computeBoardStats } from '../logic/boardStats';
+import { getCommanderInfo } from '../logic/commanderInfo';
 import { HOUSES, normalizeMoney } from '../ml/DatasetManager';
 import { auctionBrain } from '../ml/AuctionBrain';
 
@@ -8,11 +9,17 @@ export function useBoardStats(
   clues,
   currentRound,
   selectedHouse,
+  selectedCommander,
   onBoardStatsChange
 ) {
+  const commanderInfo = useMemo(
+    () => getCommanderInfo(selectedCommander, currentRound),
+    [selectedCommander, currentRound]
+  );
+
   const stats = useMemo(
-    () => computeBoardStats(appraisals, clues),
-    [appraisals, clues]
+    () => computeBoardStats(appraisals, clues, commanderInfo.infoScore),
+    [appraisals, clues, commanderInfo.infoScore]
   );
 
   let aiPredictedBid = null;
@@ -30,7 +37,8 @@ export function useBoardStats(
       houseNorm,
       paintedBlocksNorm,
       revealedEVNorm,
-      hiddenEVNorm
+      hiddenEVNorm,
+      commanderInfo.infoScore
     );
     aiPredictedBid = predictions.predictedBid;
     aiPredictedActualValue = predictions.predictedActualValue;
@@ -50,6 +58,7 @@ export function useBoardStats(
     aiPredictedBid,
     aiPredictedActualValue,
     aiConfidence,
+    commanderInfo,
   };
 
   useEffect(() => {

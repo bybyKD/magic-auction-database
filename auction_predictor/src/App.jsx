@@ -49,6 +49,7 @@ function App() {
     clues,
     currentRound,
     selectedHouse,
+    selectedCommander,
     setBoardStats
   );
 
