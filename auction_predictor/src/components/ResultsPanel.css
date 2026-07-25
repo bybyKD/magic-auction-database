@@ -416,3 +416,64 @@
 .result-card.color-blue { border-left: 4px solid var(--color-blue); }
 .result-card.color-purple { border-left: 4px solid var(--color-purple); }
 .result-card.color-green { border-left: 4px solid var(--color-green); }
+
+/* Suggestions section */
+.suggestions-section {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 12px 16px;
+}
+
+.suggestions-title {
+  margin: 0 0 8px 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.suggestions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.suggestion-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.suggestion-item.suggestion-high {
+  background: rgba(239, 68, 68, 0.08);
+  color: #fca5a5;
+}
+
+.suggestion-item.suggestion-medium {
+  background: rgba(245, 158, 11, 0.08);
+  color: #fcd34d;
+}
+
+.suggestion-item.suggestion-low {
+  background: rgba(16, 185, 129, 0.08);
+  color: #6ee7b7;
+}
+
+.suggestion-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  flex-shrink: 0;
+}
+
+.suggestion-dot.red { background: #ef4444; }
+.suggestion-dot.gold { background: #fbbf24; }
+.suggestion-dot.purple { background: #a855f7; }
+.suggestion-dot.blue { background: #3b82f6; }
+.suggestion-dot.green { background: #10b981; }
+.suggestion-dot.white { background: #f8fafc; }

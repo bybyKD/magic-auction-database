@@ -14,6 +14,7 @@ import { useAppraisals } from './hooks/useAppraisals';
 import { useBoardStats } from './hooks/useBoardStats';
 import { ROWS, COLS } from './logic/constants';
 import { GridHistory } from './logic/gridHistory';
+import { computeSuggestions } from './logic/suggestionEngine';
 
 function App() {
   const [grid, setGrid] = useState(
@@ -52,6 +53,7 @@ function App() {
   const gridHistoryRef = useRef(new GridHistory());
 
   const squareAppraisals = useAppraisals(grid, clues, selectedHouse);
+  const { suggestions, groupConfidence } = computeSuggestions(squareAppraisals, clues, grid);
   const stats = useBoardStats(
     squareAppraisals,
     clues,
@@ -369,6 +371,8 @@ function App() {
                 aiConfidence={stats.aiConfidence}
                 commanderInfo={stats.commanderInfo}
                 selectedCommander={selectedCommander}
+                suggestions={suggestions}
+                groupConfidence={groupConfidence}
               />
             </div>
           </div>

@@ -17,6 +17,8 @@ const ResultsPanel = ({
   aiConfidence,
   commanderInfo,
   selectedCommander,
+  suggestions,
+  groupConfidence,
 }) => {
   const [expandedIndices, setExpandedIndices] = useState(new Set());
 
@@ -189,6 +191,23 @@ const ResultsPanel = ({
         <span className="divider-text">INDIVIDUAL GROUP BREAKDOWNS</span>
       </div>
 
+      {suggestions && suggestions.length > 0 && (
+        <div className="suggestions-section">
+          <h4 className="suggestions-title">💡 Suggestions</h4>
+          <div className="suggestions-list">
+            {suggestions.map((s, i) => (
+              <div
+                key={i}
+                className={`suggestion-item suggestion-${s.priority}`}
+              >
+                <span className={`suggestion-dot ${s.color ? s.color.toLowerCase() : ''}`}></span>
+                <span>{s.message}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
       {appraisals.map((appraisal, index) => {
         const isExpanded = expandedIndices.has(index);
         const {
@@ -232,6 +251,32 @@ const ResultsPanel = ({
                 </div>
               </div>
               <div className="header-right">
+                {groupConfidence && groupConfidence.has(index) && (
+                  <span
+                    className="confidence-indicator"
+                    style={{
+                      padding: '3px 8px',
+                      borderRadius: '8px',
+                      fontSize: '0.7rem',
+                      fontWeight: 600,
+                      marginRight: '8px',
+                      background:
+                        groupConfidence.get(index).level === 'high'
+                          ? 'rgba(16,185,129,0.15)'
+                          : groupConfidence.get(index).level === 'medium'
+                          ? 'rgba(245,158,11,0.15)'
+                          : 'rgba(239,68,68,0.15)',
+                      color:
+                        groupConfidence.get(index).level === 'high'
+                          ? '#10b981'
+                          : groupConfidence.get(index).level === 'medium'
+                          ? '#f59e0b'
+                          : '#ef4444',
+                    }}
+                  >
+                    {groupConfidence.get(index).confidence}%
+                  </span>
+                )}
                 <span className="placement-count">
                   {formatPrice(totalPlacements)} Possibilities
                 </span>
