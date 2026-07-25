@@ -1,0 +1,19 @@
+node_modules/
+dist/
+*.mp4
+.DS_Store
+
+# Root-level screenshots
+Screenshot *.png
+
+# Screenshot folders
+01 Tutorial/
+02 Treasure Collection/*.png
+02 Treasure Collection/*.txt
+04 Realms/
+
+# Batch data files
+full_batch_*.json
+
+# Build artifacts
+*.local

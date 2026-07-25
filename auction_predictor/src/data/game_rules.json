@@ -1,0 +1,58 @@
+{
+  "rounds": {
+    "1": {
+      "instantWinMultiplier": 2.0,
+      "description": "Win instantly if bid is 2x higher than 2nd place."
+    },
+    "2": {
+      "instantWinMultiplier": 1.5,
+      "description": "Win instantly if bid is 1.5x higher than 2nd place."
+    },
+    "3": {
+      "instantWinMultiplier": 1.3,
+      "description": "Win instantly if bid is 1.3x higher than 2nd place."
+    },
+    "4": {
+      "instantWinMultiplier": 1.1,
+      "description": "Win instantly if bid is 1.1x higher than 2nd place."
+    },
+    "5": {
+      "instantWinMultiplier": 1.0,
+      "description": "Highest bidder wins."
+    }
+  },
+  "metaPriorities": {
+    "heroFigurines": {
+      "valueBoost": true,
+      "reason": "Provides permanent passive coin income."
+    }
+  },
+  "houses": {
+    "Eruditio": {
+      "treasureValue": "Low",
+      "entryCost": 500,
+      "requiredCoins": 50000,
+      "participants": 4
+    },
+    "Dawnlight": {
+      "treasureValue": "Middle",
+      "entryCost": 2000,
+      "requiredCoins": 300000,
+      "participants": 4
+    },
+    "World": {
+      "treasureValue": "High",
+      "entryCost": 10000,
+      "requiredCoins": 1200000,
+      "participants": 4,
+      "minItemValue": 15000,
+      "maxItemValue": 2500000
+    },
+    "Cosmic": {
+      "treasureValue": "Very High",
+      "entryCost": 25000,
+      "requiredCoins": 5000000,
+      "participants": 4
+    }
+  }
+}

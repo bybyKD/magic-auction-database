@@ -1,0 +1,126 @@
+.clues-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.clue-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.clue-label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.clue-desc {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin-top: -0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.banned-colors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.color-ban-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.5rem;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.color-ban-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.color-ban-btn.banned {
+  background: rgba(239, 68, 68, 0.2);
+  border-color: #ef4444;
+  color: #fca5a5;
+  text-decoration: line-through;
+}
+
+.exact-values-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.exact-value-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.color-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.color-dot.red { background-color: #ef4444; }
+.color-dot.gold { background-color: #fbbf24; }
+.color-dot.purple { background-color: #a855f7; }
+.color-dot.blue { background-color: #3b82f6; }
+.color-dot.green { background-color: #10b981; }
+.color-dot.white { background-color: #f8fafc; }
+
+.color-name {
+  font-size: 0.85rem;
+  color: #cbd5e1;
+  width: 80px;
+}
+
+.clue-input {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.4rem 0.5rem;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 0.9rem;
+  font-family: inherit;
+}
+
+.clue-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  background: rgba(15, 23, 42, 0.8);
+}
+
+.min-value-input {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.large-input {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fbbf24;
+}

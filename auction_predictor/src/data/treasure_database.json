@@ -1,0 +1,2562 @@
+[
+    {
+        "name": "Magic Hero Figurine - Red",
+        "price": 5000000,
+        "type": "Collection",
+        "shape": "2x3",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Chaos Orb",
+        "price": 3000000,
+        "type": "Gem",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Eternal Talisman",
+        "price": 1500000,
+        "type": "Accessory",
+        "shape": "2x2",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Celebration Cake",
+        "price": 1000000,
+        "type": "Food",
+        "shape": "4x4",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Dark Scale Dragon Robe",
+        "price": 950000,
+        "type": "Armor",
+        "shape": "2x3",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Great Dragon Spear",
+        "price": 880000,
+        "type": "Weapon",
+        "shape": "1x5",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Time Potion",
+        "price": 800000,
+        "type": "Potion",
+        "shape": "2x2",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Spacetime Core",
+        "price": 650000,
+        "type": "Gem",
+        "shape": "3x3",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Dawnbreak Aegis",
+        "price": 600000,
+        "type": "Armor",
+        "shape": "3x4",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Realmbreaker Axe",
+        "price": 550000,
+        "type": "Weapon",
+        "shape": "3x5",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Dawn Origin Crystal",
+        "price": 510000,
+        "type": "Mineral",
+        "shape": "2x3",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Magic Hero Figurine - Gold",
+        "price": 500000,
+        "type": "Collection",
+        "shape": "2x3",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Firmament Bow",
+        "price": 480000,
+        "type": "Weapon",
+        "shape": "2x5",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Origin Armor",
+        "price": 440000,
+        "type": "Armor",
+        "shape": "4x4",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Dew of Foresight",
+        "price": 400000,
+        "type": "Potion",
+        "shape": "1x2",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Holy Core",
+        "price": 380000,
+        "type": "Material",
+        "shape": "2x1",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Annihilation Blade",
+        "price": 350000,
+        "type": "Weapon",
+        "shape": "2x4",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Sacred Beast Pendant",
+        "price": 330000,
+        "type": "Accessory",
+        "shape": "1x3",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Bane's Ship in a Bottle",
+        "price": 300000,
+        "type": "Accessory",
+        "shape": "3x2",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Thunder Core",
+        "price": 280000,
+        "type": "Material",
+        "shape": "3x3",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "X.Borg Armor",
+        "price": 270000,
+        "type": "Armor",
+        "shape": "3x5",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Mechanical Divine Heart",
+        "price": 250000,
+        "type": "Material",
+        "shape": "4x4",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Malefic Gun",
+        "price": 240000,
+        "type": "Weapon",
+        "shape": "4x2",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Star-Core Jar",
+        "price": 220000,
+        "type": "Accessory",
+        "shape": "2x1",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Dragon Jade",
+        "price": 210000,
+        "type": "Gem",
+        "shape": "1x2",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Shadow Avatar",
+        "price": 200000,
+        "type": "Material",
+        "shape": "3x3",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Eternal Ice Crystal",
+        "price": 199000,
+        "type": "Potion",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Eternal Chalice",
+        "price": 190000,
+        "type": "Material",
+        "shape": "2x4",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Great Dragon Pill",
+        "price": 184000,
+        "type": "Potion",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Shendu Pastry",
+        "price": 180000,
+        "type": "Food",
+        "shape": "2x2",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Angela's Doll",
+        "price": 180000,
+        "type": "Accessory",
+        "shape": "1x2",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "War Axe",
+        "price": 180000,
+        "type": "Weapon",
+        "shape": "5x3",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Meteorite Core",
+        "price": 180000,
+        "type": "Mineral",
+        "shape": "3x3",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Heart of the Abyss",
+        "price": 150000,
+        "type": "Gem",
+        "shape": "2x2",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Chaos Stone",
+        "price": 150000,
+        "type": "Mineral",
+        "shape": "2x2",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Stargate Elixir",
+        "price": 150000,
+        "type": "Food",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Soulbloom Umbrella",
+        "price": 150000,
+        "type": "Accessory",
+        "shape": "3x3",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Phantom Armor",
+        "price": 140000,
+        "type": "Armor",
+        "shape": "3x4",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Holy Shield",
+        "price": 135000,
+        "type": "Armor",
+        "shape": "4x4",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Moon Cone",
+        "price": 130000,
+        "type": "Food",
+        "shape": "2x2",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Abyssal Essence",
+        "price": 130000,
+        "type": "Mineral",
+        "shape": "1x2",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Omni Soulstone",
+        "price": 120000,
+        "type": "Gem",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Romantic Fountain",
+        "price": 120000,
+        "type": "Material",
+        "shape": "4x4",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Abyssal Crown",
+        "price": 120000,
+        "type": "Accessory",
+        "shape": "2x2",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Sunflare Core",
+        "price": 110000,
+        "type": "Material",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Mystic Dragon Reishi",
+        "price": 108000,
+        "type": "Potion",
+        "shape": "2x2",
+        "description": null,
+        "name_color": "red"
+    },
+    {
+        "name": "Raging Scythe",
+        "price": 105000,
+        "type": "Weapon",
+        "shape": "2x4",
+        "description": null,
+        "name_color": "red"
+    },
+    {
+        "name": "Auction Item - Red",
+        "price": 100000,
+        "type": "Auction Item",
+        "shape": "1x1",
+        "description": null,
+        "name_color": "red"
+    },
+    {
+        "name": "Divine Crossbow",
+        "price": 100000,
+        "type": "Weapon",
+        "shape": "2x2",
+        "description": null,
+        "name_color": "gold"
+    },
+    {
+        "name": "Magic Hero Figurine - Purple",
+        "price": 100000,
+        "type": "Collection",
+        "shape": "2x3",
+        "description": null,
+        "name_color": "purple"
+    },
+    {
+        "name": "Dark System",
+        "price": 99999,
+        "type": "Material",
+        "shape": "1x1",
+        "description": null,
+        "name_color": "red"
+    },
+    {
+        "name": "Strange Fruit",
+        "price": 99000,
+        "type": "Potion",
+        "shape": "1x1",
+        "description": null,
+        "name_color": "red"
+    },
+    {
+        "name": "Raging Cloak",
+        "price": 98000,
+        "type": "Armor",
+        "shape": "2x3",
+        "description": null,
+        "name_color": "red"
+    },
+    {
+        "name": "Tai Chi Stone",
+        "price": 95000,
+        "type": "Gem",
+        "shape": "2x2",
+        "description": null,
+        "name_color": "red"
+    },
+    {
+        "name": "Savage Beast Bone",
+        "price": 95000,
+        "type": "Material",
+        "shape": "3x3",
+        "description": null,
+        "name_color": "gold"
+    },
+    {
+        "name": "Tharz",
+        "price": 90000,
+        "type": "Accessory",
+        "shape": "1x1",
+        "description": null,
+        "name_color": "red"
+    },
+    {
+        "name": "Knight's Soul",
+        "price": 90000,
+        "type": "Gem",
+        "shape": "2x2",
+        "description": null,
+        "name_color": "gold"
+    },
+    {
+        "name": "Thunder Hammer",
+        "price": 86000,
+        "type": "Weapon",
+        "shape": "2x4",
+        "description": null,
+        "name_color": "gold"
+    },
+    {
+        "name": "Dark Elixir",
+        "price": 85000,
+        "type": "Potion",
+        "shape": "2x1",
+        "description": null,
+        "name_color": "red"
+    },
+    {
+        "name": "Holy Dew",
+        "price": 85000,
+        "type": "Potion",
+        "shape": "2x3",
+        "description": null,
+        "name_color": "gold"
+    },
+    {
+        "name": "Windtalk Robe",
+        "price": 84000,
+        "type": "Armor",
+        "shape": "3x2",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Nether Flower",
+        "price": 80000,
+        "type": "Food",
+        "shape": "2x2",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Great Dragon Scale",
+        "price": 80000,
+        "type": "Material",
+        "shape": "2x3",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Fruit of Hope",
+        "price": 80000,
+        "type": "Food",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Deer Spirit Statue",
+        "price": 78000,
+        "type": "Material",
+        "shape": "3x4",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Eye of the Void Sea",
+        "price": 75000,
+        "type": "Gem",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Fighter's Sash",
+        "price": 75000,
+        "type": "Accessory",
+        "shape": "3x3",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Heart of Frost",
+        "price": 72000,
+        "type": "Mineral",
+        "shape": "3x3",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Anti-Magic Stone",
+        "price": 70000,
+        "type": "Mineral",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Abyssal Scale Armor",
+        "price": 70000,
+        "type": "Armor",
+        "shape": "3x5",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Nunchaku",
+        "price": 65000,
+        "type": "Weapon",
+        "shape": "2x1",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Eclipsed Nectar",
+        "price": 60000,
+        "type": "Food",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Dragonblood Potion",
+        "price": 60000,
+        "type": "Potion",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Primal Dragon Stone",
+        "price": 55000,
+        "type": "Gem",
+        "shape": "2x3",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Thread of Fate",
+        "price": 54000,
+        "type": "Material",
+        "shape": "1x2",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Ace of Hearts",
+        "price": 50000,
+        "type": "Accessory",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Autobot Shield",
+        "price": 45000,
+        "type": "Armor",
+        "shape": "3x4",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Mirror Mask",
+        "price": 45000,
+        "type": "Accessory",
+        "shape": "2x2",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Auction Item - Gold",
+        "price": 45000,
+        "type": "Auction Item",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Revival Potion",
+        "price": 40000,
+        "type": "Potion",
+        "shape": "1x2",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Rune Armor",
+        "price": 40000,
+        "type": "Armor",
+        "shape": "3x3",
+        "description": "",
+        "name_color": "purple"
+    },
+    {
+        "name": "Malefic Energy Pastry",
+        "price": 38000,
+        "type": "Food",
+        "shape": "2x2",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Flaming Heart",
+        "price": 37000,
+        "type": "Gem",
+        "shape": "2x2",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Magician Hat",
+        "price": 37000,
+        "type": "Armor",
+        "shape": "2x1",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Yin-Yang Pill",
+        "price": 36000,
+        "type": "Potion",
+        "shape": "2x2",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Realmbreaker Blade",
+        "price": 36000,
+        "type": "Weapon",
+        "shape": "2x4",
+        "description": "",
+        "name_color": "purple"
+    },
+    {
+        "name": "Book of Knowledge",
+        "price": 35000,
+        "type": "Weapon",
+        "shape": "1x2",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Mirror Device",
+        "price": 35000,
+        "type": "Material",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Runebound Thunder Hammer",
+        "price": 35000,
+        "type": "Weapon",
+        "shape": "5x3",
+        "description": "",
+        "name_color": "purple"
+    },
+    {
+        "name": "Darknight Fruit",
+        "price": 34000,
+        "type": "Food",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Exorcist's Seal",
+        "price": 33000,
+        "type": "Accessory",
+        "shape": "1x2",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Yoyo",
+        "price": 32000,
+        "type": "Accessory",
+        "shape": "2x2",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Sacred Pearl",
+        "price": 32000,
+        "type": "Gem",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Crispy Chip",
+        "price": 30000,
+        "type": "Food",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "red"
+    },
+    {
+        "name": "Divine Blossom Chalcedony",
+        "price": 30000,
+        "type": "Mineral",
+        "shape": "2x2",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Shadow Scale Armor",
+        "price": 30000,
+        "type": "Armor",
+        "shape": "4x4",
+        "description": "",
+        "name_color": "purple"
+    },
+    {
+        "name": "Champion Boxing Glove",
+        "price": 28000,
+        "type": "Weapon",
+        "shape": "2x2",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Moonlight Mithril",
+        "price": 27000,
+        "type": "Mineral",
+        "shape": "2x2",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Essence Core",
+        "price": 25000,
+        "type": "Weapon",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Starcore Gem",
+        "price": 25000,
+        "type": "Gem",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "purple"
+    },
+    {
+        "name": "Magic Hero Figurine - Blue",
+        "price": 25000,
+        "type": "Collection",
+        "shape": "2x3",
+        "description": "",
+        "name_color": "blue"
+    },
+    {
+        "name": "Holy Boots",
+        "price": 24000,
+        "type": "Armor",
+        "shape": "2x2",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Tree of Life Sap",
+        "price": 22000,
+        "type": "Potion",
+        "shape": "1x2",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Mushroom Soup",
+        "price": 21000,
+        "type": "Food",
+        "shape": "2x2",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Silk of Fate",
+        "price": 21000,
+        "type": "Material",
+        "shape": "2x2",
+        "description": "",
+        "name_color": "gold"
+    },
+    {
+        "name": "Primordial Mark",
+        "price": 20000,
+        "type": "Material",
+        "shape": "1x1",
+        "description": null,
+        "name_color": "gold"
+    },
+    {
+        "name": "Shadow Mark Cloak",
+        "price": 20000,
+        "type": "Armor",
+        "shape": "3x4",
+        "description": null,
+        "name_color": "purple"
+    },
+    {
+        "name": "Scholar's Aviator Hat",
+        "price": 18000,
+        "type": "Armor",
+        "shape": "2x1",
+        "description": null,
+        "name_color": "gold"
+    },
+    {
+        "name": "Celestial Orb",
+        "price": 18000,
+        "type": "Gem",
+        "shape": "1x1",
+        "description": null,
+        "name_color": "gold"
+    },
+    {
+        "name": "Darkrock Jerky",
+        "price": 18000,
+        "type": "Food",
+        "shape": "1x1",
+        "description": null,
+        "name_color": "gold"
+    },
+    {
+        "name": "Berserker Soul Stone",
+        "price": 18000,
+        "type": "Gem",
+        "shape": "1x2",
+        "description": null,
+        "name_color": "purple"
+    },
+    {
+        "name": "Nether Elixir",
+        "price": 16900,
+        "type": "Material",
+        "shape": "1x1",
+        "description": null,
+        "name_color": "gold"
+    },
+    {
+        "name": "Playful Pinwheel",
+        "price": 16000,
+        "type": "Accessory",
+        "shape": "2x2",
+        "description": null,
+        "name_color": "gold"
+    },
+    {
+        "name": "Time Gear",
+        "price": 16000,
+        "type": "Material",
+        "shape": "1x1",
+        "description": null,
+        "name_color": "gold"
+    },
+    {
+        "name": "Spectral Blade",
+        "price": 16000,
+        "type": "Weapon",
+        "shape": "3x2",
+        "description": null,
+        "name_color": "purple"
+    },
+    {
+        "name": "Shadow Orb",
+        "price": 16000,
+        "type": "Gem",
+        "shape": "2x2",
+        "description": null,
+        "name_color": "purple"
+    },
+    {
+        "name": "Colorful Conch",
+        "price": 15000,
+        "type": "Food",
+        "shape": "1x1",
+        "description": "A colorful shell (conch) with pink, orange, and blue hues.",
+        "name_color": "purple"
+    },
+    {
+        "name": "Auction Item - Purple",
+        "price": 15000,
+        "type": "Auction Item",
+        "shape": "2x2",
+        "description": "A pink/purple magnifying glass with a question mark in the center.",
+        "name_color": "purple"
+    },
+    {
+        "name": "Shadow Crystal Core Cluster",
+        "price": 15000,
+        "type": "Mineral",
+        "shape": "1x2",
+        "description": null,
+        "name_color": "gold"
+    },
+    {
+        "name": "Exorcism Orb",
+        "price": 15000,
+        "type": "Gem",
+        "shape": "1x1",
+        "description": null,
+        "name_color": "gold"
+    },
+    {
+        "name": "Celestial Fragment",
+        "price": 15000,
+        "type": "Material",
+        "shape": "1x3",
+        "description": "Shattered fragments from the Celestial Realms, containing stable spatial energy.",
+        "name_color": "purple"
+    },
+    {
+        "name": "Sacred Sand",
+        "price": 14000,
+        "type": "Mineral",
+        "shape": "1x2",
+        "description": "An hourglass shaped gem filled with golden glowing sand.",
+        "name_color": "gold"
+    },
+    {
+        "name": "Leonin Crystal",
+        "price": 13000,
+        "type": "Mineral",
+        "shape": "1x1",
+        "description": "A golden, diamond-shaped crystal with a stylized carving of a cat/fox face.",
+        "name_color": "gold"
+    },
+    {
+        "name": "Dragon Essence Fruit",
+        "price": 12000,
+        "type": "Food",
+        "shape": "1x1",
+        "description": "A dragon fruit with red skin and green-tipped scales.",
+        "name_color": "gold"
+    },
+    {
+        "name": "Lucky Cat",
+        "price": 12000,
+        "type": "Material",
+        "shape": "4x2",
+        "description": "A slot machine shaped like a maneki-neko (lucky cat).",
+        "name_color": "purple"
+    },
+    {
+        "name": "Legion Shield",
+        "price": 12000,
+        "type": "Armor",
+        "shape": "3x3",
+        "description": "A wooden shield with a silver lion's head in the center, and two crossed axes behind it.",
+        "name_color": "purple"
+    },
+    {
+        "name": "Ion Greatsword",
+        "price": 12000,
+        "type": "Weapon",
+        "shape": "2x5",
+        "description": "A futuristic sword with a glowing blue edge and a green orb near the hilt.",
+        "name_color": "purple"
+    },
+    {
+        "name": "Gilded Preserved Fruit",
+        "price": 12000,
+        "type": "Food",
+        "shape": "2x2",
+        "description": "A golden jar filled with a glowing amber liquid.",
+        "name_color": "purple"
+    },
+    {
+        "name": "Crystal Lamp",
+        "price": 12000,
+        "type": "Material",
+        "shape": "4x4",
+        "description": "A chandelier with multiple colored crystals acting as lightbulbs.",
+        "name_color": "blue"
+    },
+    {
+        "name": "Crystal Dagger",
+        "price": 10500,
+        "type": "Weapon",
+        "shape": "3x2",
+        "description": "A dagger with a translucent, glowing blue/purple blade with circuit-like lines, and a grey handle.",
+        "name_color": "purple"
+    },
+    {
+        "name": "Soul Fire Necklace",
+        "price": 10000,
+        "type": "Accessory",
+        "shape": "2x2",
+        "description": "A brown leather necklace with a pendant resembling a blue and orange flame.",
+        "name_color": "purple"
+    },
+    {
+        "name": "Frenzy Potion",
+        "price": 10000,
+        "type": "Potion",
+        "shape": "1x1",
+        "description": "A round glass bottle filled with swirling orange liquid, adorned with dark metal accents.",
+        "name_color": "purple"
+    },
+    {
+        "name": "Orb of Light",
+        "price": 10000,
+        "type": "Gem",
+        "shape": "1x1",
+        "description": "A glowing golden orb with a bright light in the center.",
+        "name_color": "purple"
+    },
+    {
+        "name": "Cast Iron Knight Shield",
+        "price": 10000,
+        "type": "Armor",
+        "shape": "3x5",
+        "description": "A simple grey kite shield with two brown leather straps on the front.",
+        "name_color": "blue"
+    },
+    {
+        "name": "Blazing Potion",
+        "price": 9500,
+        "type": "Potion",
+        "shape": "1x2",
+        "description": null,
+        "name_color": "blue"
+    },
+    {
+        "name": "Gilded Champagne",
+        "price": 9500,
+        "type": "Food",
+        "shape": "2x2",
+        "description": "A precious champagne with fine bubbles. Drinking it inspires the mind, provides a slight restoration of condition, and boosts morale.",
+        "name_color": "purple"
+    },
+    {
+        "name": "Star Potion",
+        "price": 9000,
+        "type": "Potion",
+        "shape": "1x2",
+        "description": null,
+        "name_color": "purple"
+    },
+    {
+        "name": "Sacred Sakura",
+        "price": 9000,
+        "type": "Potion",
+        "shape": "1x2",
+        "description": null,
+        "name_color": "purple"
+    },
+    {
+        "name": "Ghostlight Mushroom",
+        "price": 9000,
+        "type": "Food",
+        "shape": "1x1",
+        "description": null,
+        "name_color": "purple"
+    },
+    {
+        "name": "Scarlet Shadow Sakura Mochi",
+        "price": 8500,
+        "type": "Food",
+        "shape": "1x1",
+        "description": null,
+        "name_color": "purple"
+    },
+    {
+        "name": "Deep Sea Squid Ink",
+        "price": 8000,
+        "type": "Potion",
+        "shape": "1x2",
+        "description": null,
+        "name_color": "gold"
+    },
+    {
+        "name": "Crystal Pickaxe",
+        "price": 8000,
+        "type": "Weapon",
+        "shape": "3x3",
+        "description": null,
+        "name_color": "purple"
+    },
+    {
+        "name": "Mecha Arm Armor",
+        "price": 8000,
+        "type": "Armor",
+        "shape": "2x2",
+        "description": null,
+        "name_color": "purple"
+    },
+    {
+        "name": "Moonstone",
+        "price": 8000,
+        "type": "Mineral",
+        "shape": "2x2",
+        "description": null,
+        "name_color": "purple"
+    },
+    {
+        "name": "Holy Potion",
+        "price": 8000,
+        "type": "Potion",
+        "shape": "1x2",
+        "description": null,
+        "name_color": "purple"
+    },
+    {
+        "name": "Dragon Eye Stone",
+        "price": 8000,
+        "type": "Mineral",
+        "shape": "1x1",
+        "description": null,
+        "name_color": "purple"
+    },
+    {
+        "name": "Refined Iron Armor",
+        "price": 8000,
+        "type": "Armor",
+        "shape": "3x5",
+        "description": null,
+        "name_color": "blue"
+    },
+    {
+        "name": "Ancient Jade",
+        "price": 8000,
+        "type": "Gem",
+        "shape": "2x2",
+        "description": null,
+        "name_color": "blue"
+    },
+    {
+        "name": "Pearl of the Deep",
+        "price": 7500,
+        "type": "Gem",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "purple"
+    },
+    {
+        "name": "Holy Candle",
+        "price": 7500,
+        "type": "Material",
+        "shape": "2x4",
+        "description": "",
+        "name_color": "blue"
+    },
+    {
+        "name": "Exorcism Dagger",
+        "price": 7500,
+        "type": "Weapon",
+        "shape": "3x2",
+        "description": null,
+        "name_color": "purple"
+    },
+    {
+        "name": "Mechanical Sacred Heart",
+        "price": 7500,
+        "type": "Material",
+        "shape": "2x2",
+        "description": null,
+        "name_color": "purple"
+    },
+    {
+        "name": "Cloud Pattern Folding Fan",
+        "price": 7200,
+        "type": "Accessory",
+        "shape": "2x2",
+        "description": "",
+        "name_color": "purple"
+    },
+    {
+        "name": "Holy Breastplate",
+        "price": 7000,
+        "type": "Accessory",
+        "shape": "3x3",
+        "description": "",
+        "name_color": "purple"
+    },
+    {
+        "name": "Sacred Potion",
+        "price": 7000,
+        "type": "Potion",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "purple"
+    },
+    {
+        "name": "Stardust Stone",
+        "price": 7000,
+        "type": "Mineral",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "blue"
+    },
+    {
+        "name": "Lotus Heart Pill",
+        "price": 6500,
+        "type": "Potion",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "purple"
+    },
+    {
+        "name": "Spirit Fox Fur",
+        "price": 6000,
+        "type": "Material",
+        "shape": "2x2",
+        "description": "",
+        "name_color": "purple"
+    },
+    {
+        "name": "Emerald Pendant",
+        "price": 6000,
+        "type": "Accessory",
+        "shape": "1x2",
+        "description": "",
+        "name_color": "purple"
+    },
+    {
+        "name": "Dim Sapphire",
+        "price": 6000,
+        "type": "Gem",
+        "shape": "1x2",
+        "description": "",
+        "name_color": "purple"
+    },
+    {
+        "name": "Soulbloom Jade",
+        "price": 6000,
+        "type": "Mineral",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "purple"
+    },
+    {
+        "name": "Ocean Blue Diamond",
+        "price": 6000,
+        "type": "Gem",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "blue"
+    },
+    {
+        "name": "Auction Item - Blue",
+        "price": 6000,
+        "type": "Auction Item",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "blue"
+    },
+    {
+        "name": "Amethyst Ore",
+        "price": 5800,
+        "type": "Mineral",
+        "shape": "2x2",
+        "description": "",
+        "name_color": "purple"
+    },
+    {
+        "name": "Rockcore Stone",
+        "price": 5800,
+        "type": "Mineral",
+        "shape": "3x4",
+        "description": "",
+        "name_color": "blue"
+    },
+    {
+        "name": "Shadow Gem",
+        "price": 5500,
+        "type": "Gem",
+        "shape": "2x2",
+        "description": "A glowing, dark purple, rhombus-shaped crystal or gem with facets.",
+        "name_color": "blue"
+    },
+    {
+        "name": "Dragon Pendant",
+        "price": 5500,
+        "type": "Accessory",
+        "shape": "1x2",
+        "description": "A circular green jade pendant with carved dragons, hanging from a red cord with a red tassel.",
+        "name_color": "blue"
+    },
+    {
+        "name": "Hardwood Staff",
+        "price": 5300,
+        "type": "Weapon",
+        "shape": "1x4",
+        "description": "A wooden staff made of twisted branches enclosing a large blue diamond-shaped crystal, adorned with small leaves and smaller blue crystals.",
+        "name_color": "blue"
+    },
+    {
+        "name": "Knight's Medal",
+        "price": 5000,
+        "type": "Accessory",
+        "shape": "1x1",
+        "description": "A circular golden medal or emblem with a central green gem and star pattern, surrounded by four smaller green gems.",
+        "name_color": "purple"
+    },
+    {
+        "name": "Frostberry Jam",
+        "price": 5000,
+        "type": "Food",
+        "shape": "1x1",
+        "description": "A glass jar filled with dark purple jam and whole berries, sealed with a metal lid and red band.",
+        "name_color": "purple"
+    },
+    {
+        "name": "Field Redirect Shield",
+        "price": 5000,
+        "type": "Armor",
+        "shape": "3x3",
+        "description": "A round wooden shield with a metal rim and a metal cross-brace centered with a dome boss.",
+        "name_color": "blue"
+    },
+    {
+        "name": "Windflow Rock",
+        "price": 4800,
+        "type": "Mineral",
+        "shape": "3x3",
+        "description": "A smooth, swirling stone with pearlescent hues of blue, gold, and white, resembling flowing wind or water.",
+        "name_color": "blue"
+    },
+    {
+        "name": "Thunder Ore",
+        "price": 4500,
+        "type": "Mineral",
+        "shape": "2x2",
+        "description": "A cluster of jagged crystals that transition from deep blue at the base to glowing yellow/gold at the tips.",
+        "name_color": "purple"
+    },
+    {
+        "name": "Wind Strike Ring",
+        "price": 4500,
+        "type": "Accessory",
+        "shape": "1x1",
+        "description": "A silver ring designed with winged motifs on the sides and holding a blue diamond-shaped gem, with glowing blue runes carved into the band.",
+        "name_color": "purple"
+    },
+    {
+        "name": "Sigil Candle",
+        "price": 4500,
+        "type": "Material",
+        "shape": "1x3",
+        "description": "A lit, melting white candle with a golden cross emblem, sitting on a wooden dish atop a golden stand.",
+        "name_color": "blue"
+    },
+    {
+        "name": "Space-Time Dust",
+        "price": 4200,
+        "type": "Material",
+        "shape": "1x1",
+        "description": "A small corked glass vial shaped like an hourglass, containing golden sand and surrounded by floating golden gears.",
+        "name_color": "purple"
+    },
+    {
+        "name": "Darkblood Potion",
+        "price": 4200,
+        "type": "Potion",
+        "shape": "1x1",
+        "description": "A dark-rimmed glass flask filled with swirling, bright red liquid, featuring a black cap and an emblem with a red rune.",
+        "name_color": "blue"
+    },
+    {
+        "name": "Mecha Core Shard",
+        "price": 4000,
+        "type": "Material",
+        "shape": "2x2",
+        "description": "A cylindrical mechanical device or core made of gears and metal parts, with glowing blue and green energy rings inside.",
+        "name_color": "purple"
+    },
+    {
+        "name": "Iron Hunting Bow",
+        "price": 4000,
+        "type": "Weapon",
+        "shape": "3x2",
+        "description": "A wooden recurve bow reinforced with iron pieces at the handle and limbs, strung with a thick braided cord.",
+        "name_color": "blue"
+    },
+    {
+        "name": "Holy Rune",
+        "price": 4000,
+        "type": "Material",
+        "shape": "1x1",
+        "description": "A rectangular golden tablet or rune plate bearing a central eye symbol surrounded by sun-like rays.",
+        "name_color": "blue"
+    },
+    {
+        "name": "Steel Helm",
+        "price": 3800,
+        "type": "Armor",
+        "shape": "2x2",
+        "description": null,
+        "name_color": "blue"
+    },
+    {
+        "name": "Black Iron Dagger",
+        "price": 3800,
+        "type": "Weapon",
+        "shape": "1x2",
+        "description": null,
+        "name_color": "blue"
+    },
+    {
+        "name": "Wind Spirit Pendant",
+        "price": 3700,
+        "type": "Accessory",
+        "shape": "2x2",
+        "description": null,
+        "name_color": "blue"
+    },
+    {
+        "name": "Stardust Sand",
+        "price": 3600,
+        "type": "Material",
+        "shape": "2x2",
+        "description": null,
+        "name_color": "blue"
+    },
+    {
+        "name": "Fox Jade Pendant",
+        "price": 3600,
+        "type": "Accessory",
+        "shape": "1x1",
+        "description": null,
+        "name_color": "blue"
+    },
+    {
+        "name": "Molten Ore",
+        "price": 3500,
+        "type": "Mineral",
+        "shape": "2x2",
+        "description": null,
+        "name_color": "purple"
+    },
+    {
+        "name": "Wasteland Brew",
+        "price": 3500,
+        "type": "Potion",
+        "shape": "1x2",
+        "description": null,
+        "name_color": "blue"
+    },
+    {
+        "name": "Refined Dried Fruits",
+        "price": 3500,
+        "type": "Food",
+        "shape": "1x1",
+        "description": null,
+        "name_color": "blue"
+    },
+    {
+        "name": "Standard Iron Sword",
+        "price": 3500,
+        "type": "Weapon",
+        "shape": "3x5",
+        "description": null,
+        "name_color": "green"
+    },
+    {
+        "name": "Longday Honey",
+        "price": 3400,
+        "type": "Food",
+        "shape": "2x2",
+        "description": null,
+        "name_color": "blue"
+    },
+    {
+        "name": "Deepsea Crystal",
+        "price": 3300,
+        "type": "Mineral",
+        "shape": "2x2",
+        "description": null,
+        "name_color": "blue"
+    },
+    {
+        "name": "Shadow Powder",
+        "price": 3200,
+        "type": "Material",
+        "shape": "1x2",
+        "description": null,
+        "name_color": "blue"
+    },
+    {
+        "name": "Abyssal Bone Chain",
+        "price": 3100,
+        "type": "Accessory",
+        "shape": "3x3",
+        "description": null,
+        "name_color": "blue"
+    },
+    {
+        "name": "Moonlight Stone",
+        "price": 3000,
+        "type": "Gem",
+        "shape": "1x1",
+        "description": null,
+        "name_color": "blue"
+    },
+    {
+        "name": "Rough Linen Robe",
+        "price": 3000,
+        "type": "Armor",
+        "shape": "3x5",
+        "description": null,
+        "name_color": "green"
+    },
+    {
+        "name": "Cast Iron Shortblade",
+        "price": 3000,
+        "type": "Weapon",
+        "shape": "3x2",
+        "description": null,
+        "name_color": "blue"
+    },
+    {
+        "name": "Pumpkin Hat",
+        "price": 3000,
+        "type": "Armor",
+        "shape": "2x2",
+        "description": null,
+        "name_color": "blue"
+    },
+    {
+        "name": "Battleworn Belt",
+        "price": 2900,
+        "type": "Armor",
+        "shape": "2x1",
+        "description": null,
+        "name_color": "blue"
+    },
+    {
+        "name": "Glowstone",
+        "price": 2800,
+        "type": "Gem",
+        "shape": "1x2",
+        "description": null,
+        "name_color": "blue"
+    },
+    {
+        "name": "Black Iron",
+        "price": 2800,
+        "type": "Mineral",
+        "shape": "2x2",
+        "description": null,
+        "name_color": "blue"
+    },
+    {
+        "name": "Poisoned Dart",
+        "price": 2700,
+        "type": "Weapon",
+        "shape": "3x2",
+        "description": null,
+        "name_color": "blue"
+    },
+    {
+        "name": "Standard Gear",
+        "price": 2600,
+        "type": "Material",
+        "shape": "3x3",
+        "description": null,
+        "name_color": "blue"
+    },
+    {
+        "name": "Dull Iron",
+        "price": 2600,
+        "type": "Mineral",
+        "shape": "2x2",
+        "description": null,
+        "name_color": "blue"
+    },
+    {
+        "name": "Vitality Potion",
+        "price": 2500,
+        "type": "Potion",
+        "shape": "2x2",
+        "description": null,
+        "name_color": "blue"
+    },
+    {
+        "name": "Sapphire Ring",
+        "price": 2500,
+        "type": "Accessory",
+        "shape": "1x1",
+        "description": null,
+        "name_color": "blue"
+    },
+    {
+        "name": "Abyss Crystal",
+        "price": 2500,
+        "type": "Gem",
+        "shape": "2x2",
+        "description": null,
+        "name_color": "green"
+    },
+    {
+        "name": "Donut",
+        "price": 2400,
+        "type": "Food",
+        "shape": "2x1",
+        "description": null,
+        "name_color": "blue"
+    },
+    {
+        "name": "Leather Jerkin",
+        "price": 2300,
+        "type": "Armor",
+        "shape": "3x3",
+        "description": null,
+        "name_color": "blue"
+    },
+    {
+        "name": "Tanned Leather",
+        "price": 2200,
+        "type": "Material",
+        "shape": "2x2",
+        "description": null,
+        "name_color": "blue"
+    },
+    {
+        "name": "Dewdrop Cookies",
+        "price": 2100,
+        "type": "Food",
+        "shape": "1x1",
+        "description": "none",
+        "name_color": "green"
+    },
+    {
+        "name": "Onmyouji Talisman",
+        "price": 2100,
+        "type": "Weapon",
+        "shape": "1x1",
+        "description": "none",
+        "name_color": "green"
+    },
+    {
+        "name": "Thin Iron Shield",
+        "price": 2100,
+        "type": "Armor",
+        "shape": "4x4",
+        "description": "none",
+        "name_color": "green"
+    },
+    {
+        "name": "Camel Hide",
+        "price": 2100,
+        "type": "Material",
+        "shape": "2x2",
+        "description": "none",
+        "name_color": "green"
+    },
+    {
+        "name": "Coral Ointment",
+        "price": 2100,
+        "type": "Potion",
+        "shape": "2x2",
+        "description": null,
+        "name_color": "blue"
+    },
+    {
+        "name": "Seaweed Rope",
+        "price": 2000,
+        "type": "Material",
+        "shape": "1x1",
+        "description": "none",
+        "name_color": "blue"
+    },
+    {
+        "name": "Einherjar Amber Shard",
+        "price": 2000,
+        "type": "Gem",
+        "shape": "1x1",
+        "description": "none",
+        "name_color": "green"
+    },
+    {
+        "name": "Auction Item - Green",
+        "price": 2000,
+        "type": "Auction Item",
+        "shape": "1x1",
+        "description": "none",
+        "name_color": "green"
+    },
+    {
+        "name": "Soda",
+        "price": 1800,
+        "type": "Food",
+        "shape": "1x2",
+        "description": "none",
+        "name_color": "blue"
+    },
+    {
+        "name": "Holy Water Vial",
+        "price": 1800,
+        "type": "Potion",
+        "shape": "1x2",
+        "description": "none",
+        "name_color": "blue"
+    },
+    {
+        "name": "Yellow Duck Umbrella",
+        "price": 1800,
+        "type": "Accessory",
+        "shape": "3x3",
+        "description": "none",
+        "name_color": "green"
+    },
+    {
+        "name": "Pearl Pendant",
+        "price": 1800,
+        "type": "Accessory",
+        "shape": "2x2",
+        "description": "none",
+        "name_color": "green"
+    },
+    {
+        "name": "Tanuki Mask",
+        "price": 1600,
+        "type": "Accessory",
+        "shape": "2x1",
+        "description": "none",
+        "name_color": "blue"
+    },
+    {
+        "name": "Ice Crystal Ore",
+        "price": 1600,
+        "type": "Mineral",
+        "shape": "1x1",
+        "description": "none",
+        "name_color": "blue"
+    },
+    {
+        "name": "Silvermoon Honeydew",
+        "price": 1600,
+        "type": "Food",
+        "shape": "2x2",
+        "description": "none",
+        "name_color": "green"
+    },
+    {
+        "name": "Vitality Crystal",
+        "price": 1600,
+        "type": "Mineral",
+        "shape": "1x1",
+        "description": "none",
+        "name_color": "green"
+    },
+    {
+        "name": "Black Pearl",
+        "price": 1500,
+        "type": "Material",
+        "shape": "1x1",
+        "description": "none",
+        "name_color": "blue"
+    },
+    {
+        "name": "Molten Center Candy",
+        "price": 1500,
+        "type": "Food",
+        "shape": "1x1",
+        "description": "none",
+        "name_color": "blue"
+    },
+    {
+        "name": "Mountainvein Stone",
+        "price": 1500,
+        "type": "Gem",
+        "shape": "3x3",
+        "description": "none",
+        "name_color": "green"
+    },
+    {
+        "name": "Frost Iron Ore",
+        "price": 1500,
+        "type": "Mineral",
+        "shape": "2x3",
+        "description": "none",
+        "name_color": "green"
+    },
+    {
+        "name": "Freshwater Pouch",
+        "price": 1500,
+        "type": "Food",
+        "shape": "2x2",
+        "description": "none",
+        "name_color": "green"
+    },
+    {
+        "name": "Wild Honey",
+        "price": 1500,
+        "type": "Food",
+        "shape": "1x1",
+        "description": "none",
+        "name_color": "green"
+    },
+    {
+        "name": "Reishi Slice",
+        "price": 1500,
+        "type": "Potion",
+        "shape": "1x1",
+        "description": "none",
+        "name_color": "green"
+    },
+    {
+        "name": "Molten Ore Candy",
+        "price": 1500,
+        "type": "Food",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "white"
+    },
+    {
+        "name": "Iron Bracers",
+        "price": 1400,
+        "type": "Armor",
+        "shape": "1x1",
+        "description": "none",
+        "name_color": "green"
+    },
+    {
+        "name": "Nightvein Rock",
+        "price": 1300,
+        "type": "Mineral",
+        "shape": "3x2",
+        "description": "none",
+        "name_color": "green"
+    },
+    {
+        "name": "Hunting Bow",
+        "price": 1300,
+        "type": "Weapon",
+        "shape": "2x4",
+        "description": "none",
+        "name_color": "green"
+    },
+    {
+        "name": "Cotton Bag",
+        "price": 1200,
+        "type": "Accessory",
+        "shape": "2x3",
+        "description": "none",
+        "name_color": "green"
+    },
+    {
+        "name": "Holy Rune Cloth",
+        "price": 1200,
+        "type": "Material",
+        "shape": "2x3",
+        "description": "none",
+        "name_color": "green"
+    },
+    {
+        "name": "Street Shades",
+        "price": 1200,
+        "type": "Accessory",
+        "shape": "2x1",
+        "description": "none",
+        "name_color": "green"
+    },
+    {
+        "name": "Herb Bag",
+        "price": 1200,
+        "type": "Potion",
+        "shape": "1x1",
+        "description": "none",
+        "name_color": "green"
+    },
+    {
+        "name": "Hide Coat",
+        "price": 1200,
+        "type": "Armor",
+        "shape": "2x4",
+        "description": "none",
+        "name_color": "white"
+    },
+    {
+        "name": "Scarlet Sand Copper Ore",
+        "price": 1100,
+        "type": "Mineral",
+        "shape": "2x2",
+        "description": "",
+        "name_color": "green"
+    },
+    {
+        "name": "Standard Quiver",
+        "price": 1100,
+        "type": "Weapon",
+        "shape": "1x3",
+        "description": "",
+        "name_color": "green"
+    },
+    {
+        "name": "Scarlet Band Copper Ore",
+        "price": 1100,
+        "type": "Mineral",
+        "shape": "2x2",
+        "description": "",
+        "name_color": "white"
+    },
+    {
+        "name": "Refined Wooden Spear",
+        "price": 1000,
+        "type": "Weapon",
+        "shape": "3x1",
+        "description": "",
+        "name_color": "green"
+    },
+    {
+        "name": "Dried Wild Fruits",
+        "price": 1000,
+        "type": "Food",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "green"
+    },
+    {
+        "name": "Verdant Ring",
+        "price": 1000,
+        "type": "Accessory",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "green"
+    },
+    {
+        "name": "Oak Buckler",
+        "price": 900,
+        "type": "Armor",
+        "shape": "3x3",
+        "description": "",
+        "name_color": "green"
+    },
+    {
+        "name": "Miasma Stone",
+        "price": 900,
+        "type": "Mineral",
+        "shape": "2x2",
+        "description": "",
+        "name_color": "green"
+    },
+    {
+        "name": "Lunar Crystal",
+        "price": 900,
+        "type": "Gem",
+        "shape": "1x2",
+        "description": "",
+        "name_color": "green"
+    },
+    {
+        "name": "Self-Defense Knife",
+        "price": 900,
+        "type": "Weapon",
+        "shape": "2x1",
+        "description": "",
+        "name_color": "white"
+    },
+    {
+        "name": "Copper Ring",
+        "price": 900,
+        "type": "Accessory",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "white"
+    },
+    {
+        "name": "Hide Headband",
+        "price": 800,
+        "type": "Accessory",
+        "shape": "2x1",
+        "description": "",
+        "name_color": "white"
+    },
+    {
+        "name": "Copper Token",
+        "price": 800,
+        "type": "Accessory",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "white"
+    },
+    {
+        "name": "Moon Mark Stone",
+        "price": 800,
+        "type": "Gem",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "white"
+    },
+    {
+        "name": "Tidal Algae",
+        "price": 800,
+        "type": "Potion",
+        "shape": "2x2",
+        "description": "",
+        "name_color": "green"
+    },
+    {
+        "name": "Frost Crystal",
+        "price": 800,
+        "type": "Gem",
+        "shape": "2x2",
+        "description": "",
+        "name_color": "green"
+    },
+    {
+        "name": "Blood Vial",
+        "price": 800,
+        "type": "Food",
+        "shape": "1x2",
+        "description": "",
+        "name_color": "green"
+    },
+    {
+        "name": "Gleaming Herb",
+        "price": 800,
+        "type": "Potion",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "green"
+    },
+    {
+        "name": "Hemp Headwrap",
+        "price": 800,
+        "type": "Accessory",
+        "shape": "2x2",
+        "description": "",
+        "name_color": "white"
+    },
+    {
+        "name": "Darkrock Vine",
+        "price": 700,
+        "type": "Material",
+        "shape": "2x3",
+        "description": "",
+        "name_color": "green"
+    },
+    {
+        "name": "Rawhide Material",
+        "price": 700,
+        "type": "Material",
+        "shape": "2x2",
+        "description": "",
+        "name_color": "green"
+    },
+    {
+        "name": "Cowhide Boots",
+        "price": 600,
+        "type": "Armor",
+        "shape": "2x2",
+        "description": "",
+        "name_color": "green"
+    },
+    {
+        "name": "Cloth Headband",
+        "price": 600,
+        "type": "Armor",
+        "shape": "2x1",
+        "description": "",
+        "name_color": "green"
+    },
+    {
+        "name": "Hard Wheat Cake",
+        "price": 600,
+        "type": "Food",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "green"
+    },
+    {
+        "name": "Stone Mortar",
+        "price": 600,
+        "type": "Material",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "green"
+    },
+    {
+        "name": "Reef Shell",
+        "price": 600,
+        "type": "Material",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "green"
+    },
+    {
+        "name": "Permafrost Rock",
+        "price": 600,
+        "type": "Mineral",
+        "shape": "3x3",
+        "description": "",
+        "name_color": "white"
+    },
+    {
+        "name": "Worn Cloth Bag",
+        "price": 600,
+        "type": "Accessory",
+        "shape": "2x3",
+        "description": "",
+        "name_color": "white"
+    },
+    {
+        "name": "Training Wooden Sword",
+        "price": 600,
+        "type": "Weapon",
+        "shape": "1x3",
+        "description": "",
+        "name_color": "white"
+    },
+    {
+        "name": "Bell",
+        "price": 500,
+        "type": "Accessory",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "green"
+    },
+    {
+        "name": "Spectral Leaf",
+        "price": 500,
+        "type": "Potion",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "green"
+    },
+    {
+        "name": "Lava Stone",
+        "price": 500,
+        "type": "Gem",
+        "shape": "3x3",
+        "description": "",
+        "name_color": "white"
+    },
+    {
+        "name": "Common Arrow",
+        "price": 500,
+        "type": "Weapon",
+        "shape": "2x1",
+        "description": "",
+        "name_color": "white"
+    },
+    {
+        "name": "Clearwater Potion",
+        "price": 500,
+        "type": "Potion",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "white"
+    },
+    {
+        "name": "Crushed Pearl",
+        "price": 500,
+        "type": "Potion",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "white"
+    },
+    {
+        "name": "Auction Item - Gray",
+        "price": 500,
+        "type": "Auction Item",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "white"
+    },
+    {
+        "name": "Copper Nail Arrow",
+        "price": 500,
+        "type": "Weapon",
+        "shape": "3x1",
+        "description": "",
+        "name_color": "green"
+    },
+    {
+        "name": "Basic Cloth Armor",
+        "price": 450,
+        "type": "Armor",
+        "shape": "2x3",
+        "description": "",
+        "name_color": "white"
+    },
+    {
+        "name": "Energy Capsule",
+        "price": 450,
+        "type": "Food",
+        "shape": "1x2",
+        "description": "",
+        "name_color": "white"
+    },
+    {
+        "name": "Pile of Iron Nails",
+        "price": 400,
+        "type": "Material",
+        "shape": "2x1",
+        "description": "",
+        "name_color": "green"
+    },
+    {
+        "name": "Clay Cup",
+        "price": 400,
+        "type": "Material",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "green"
+    },
+    {
+        "name": "Tide Jade",
+        "price": 400,
+        "type": "Gem",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "green"
+    },
+    {
+        "name": "Sunstone",
+        "price": 400,
+        "type": "Gem",
+        "shape": "2x2",
+        "description": "",
+        "name_color": "white"
+    },
+    {
+        "name": "Clay Oil Lamp",
+        "price": 400,
+        "type": "Material",
+        "shape": "2x1",
+        "description": "",
+        "name_color": "white"
+    },
+    {
+        "name": "Harpoon",
+        "price": 400,
+        "type": "Weapon",
+        "shape": "1x4",
+        "description": "",
+        "name_color": "white"
+    },
+    {
+        "name": "Tomato",
+        "price": 400,
+        "type": "Food",
+        "shape": "1x1",
+        "description": null,
+        "name_color": "white"
+    },
+    {
+        "name": "Bamboo Bracelet",
+        "price": 400,
+        "type": "Accessory",
+        "shape": "1x1",
+        "description": null,
+        "name_color": "white"
+    },
+    {
+        "name": "Coconut",
+        "price": 350,
+        "type": "Food",
+        "shape": "2x2",
+        "description": null,
+        "name_color": "white"
+    },
+    {
+        "name": "Cotton Shorts",
+        "price": 350,
+        "type": "Armor",
+        "shape": "2x2",
+        "description": null,
+        "name_color": "white"
+    },
+    {
+        "name": "Common Firewood",
+        "price": 350,
+        "type": "Material",
+        "shape": "2x1",
+        "description": null,
+        "name_color": "white"
+    },
+    {
+        "name": "Holy Mint",
+        "price": 350,
+        "type": "Potion",
+        "shape": "1x1",
+        "description": null,
+        "name_color": "white"
+    },
+    {
+        "name": "White Shell Stone",
+        "price": 300,
+        "type": "Gem",
+        "shape": "2x2",
+        "description": null,
+        "name_color": "white"
+    },
+    {
+        "name": "Raw Iron Ore",
+        "price": 300,
+        "type": "Mineral",
+        "shape": "2x2",
+        "description": null,
+        "name_color": "white"
+    },
+    {
+        "name": "Freeze-Dried Cod",
+        "price": 300,
+        "type": "Food",
+        "shape": "1x1",
+        "description": null,
+        "name_color": "white"
+    },
+    {
+        "name": "Sandstorm Stone",
+        "price": 300,
+        "type": "Mineral",
+        "shape": "1x1",
+        "description": null,
+        "name_color": "white"
+    },
+    {
+        "name": "Wind Crest Earrings",
+        "price": 300,
+        "type": "Accessory",
+        "shape": "1x1",
+        "description": null,
+        "name_color": "white"
+    },
+    {
+        "name": "Long Wooden Staff",
+        "price": 250,
+        "type": "Weapon",
+        "shape": "1x5",
+        "description": null,
+        "name_color": "white"
+    },
+    {
+        "name": "Cadia Riverlands Chrysanthemum",
+        "price": 250,
+        "type": "Potion",
+        "shape": "1x1",
+        "description": null,
+        "name_color": "white"
+    },
+    {
+        "name": "Hardwood Mask",
+        "price": 200,
+        "type": "Armor",
+        "shape": "2x2",
+        "description": null,
+        "name_color": "white"
+    },
+    {
+        "name": "Slingshot",
+        "price": 200,
+        "type": "Weapon",
+        "shape": "1x2",
+        "description": null,
+        "name_color": "white"
+    },
+    {
+        "name": "Worn Straw Sandals",
+        "price": 200,
+        "type": "Armor",
+        "shape": "1x1",
+        "description": null,
+        "name_color": "white"
+    },
+    {
+        "name": "Healing Herb",
+        "price": 200,
+        "type": "Potion",
+        "shape": "1x1",
+        "description": null,
+        "name_color": "white"
+    },
+    {
+        "name": "Spicy Garlic",
+        "price": 200,
+        "type": "Food",
+        "shape": "1x1",
+        "description": null,
+        "name_color": "white"
+    },
+    {
+        "name": "Frostland Moss",
+        "price": 200,
+        "type": "Potion",
+        "shape": "1x1",
+        "description": null,
+        "name_color": "white"
+    },
+    {
+        "name": "Sandstorm Crystal",
+        "price": 200,
+        "type": "Gem",
+        "shape": "1x1",
+        "description": null,
+        "name_color": "white"
+    },
+    {
+        "name": "Wood Fragments",
+        "price": 200,
+        "type": "Material",
+        "shape": "2x2",
+        "description": null,
+        "name_color": "white"
+    },
+    {
+        "name": "Coarse Cloth Scraps",
+        "price": 200,
+        "type": "Material",
+        "shape": "2x2",
+        "description": null,
+        "name_color": "white"
+    },
+    {
+        "name": "Common Gravel",
+        "price": 200,
+        "type": "Mineral",
+        "shape": "2x2",
+        "description": "",
+        "name_color": "white"
+    },
+    {
+        "name": "Tattered Hide",
+        "price": 150,
+        "type": "Material",
+        "shape": "2x3",
+        "description": null,
+        "name_color": "white"
+    },
+    {
+        "name": "Coarse Hemp Rope",
+        "price": 150,
+        "type": "Material",
+        "shape": "1x1",
+        "description": null,
+        "name_color": "white"
+    },
+    {
+        "name": "Coal",
+        "price": 150,
+        "type": "Mineral",
+        "shape": "1x1",
+        "description": null,
+        "name_color": "white"
+    },
+    {
+        "name": "Desert Date",
+        "price": 150,
+        "type": "Food",
+        "shape": "1x1",
+        "description": null,
+        "name_color": "white"
+    },
+    {
+        "name": "Common Clay",
+        "price": 100,
+        "type": "Mineral",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "white"
+    },
+    {
+        "name": "Crag Flower",
+        "price": 100,
+        "type": "Potion",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "white"
+    },
+    {
+        "name": "Shattered Wasteland Jade",
+        "price": 100,
+        "type": "Gem",
+        "shape": "1x1",
+        "description": "",
+        "name_color": "white"
+    },
+    {
+        "name": "Woven Garland",
+        "price": 100,
+        "type": "Accessory",
+        "shape": "2x2",
+        "description": null,
+        "name_color": "white"
+    },
+    {
+        "name": "Shallow Sea Ore Sand",
+        "price": 100,
+        "type": "Mineral",
+        "shape": "2x1",
+        "description": null,
+        "name_color": "white"
+    },
+    {
+        "name": "Leather Bracers",
+        "price": 100,
+        "type": "Armor",
+        "shape": "1x2",
+        "description": null,
+        "name_color": "white"
+    },
+    {
+        "name": "Iron Nail",
+        "price": 100,
+        "type": "Material",
+        "shape": "1x1",
+        "description": null,
+        "name_color": "white"
+    }
+]

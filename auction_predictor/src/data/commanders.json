@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Minotaur",
+    "title": "Equipment Master",
+    "description": "Rounds 1-3: randomly reveals the sizes of 3 Treasures with 6 or more tiles (Prioritizing unknown ones). Rounds 4-5: Randomly reveals the quality of 2 treasures with 6 or more tiles (prioritizing unknown ones)."
+  },
+  {
+    "name": "Johnson",
+    "title": "Base Value",
+    "description": "When Auction begins, reveals the general locations of white, green, and blue treasures. In round 3 reveals the sizes of all treasures."
+  },
+  {
+    "name": "Harley",
+    "title": "Precious Vision",
+    "description": "When Auction begins, reveals the total quantity of purple, gold and red Treasures."
+  },
+  {
+    "name": "Alice",
+    "title": "Supreme Bloodline",
+    "description": "When auction begins, reveals the quality of 4 random treasures. At the start of round 3, reveals the quality of 1 random treasure with the highest quality in this auction."
+  },
+  {
+    "name": "Aurora",
+    "title": "Frozen Mirror",
+    "description": "When the round 5 begins, reveals the quality of all treasures."
+  },
+  {
+    "name": "Angela",
+    "title": "Comfort Meal",
+    "description": "When the auction begins, randomly reveals the sizes of 4 types of treasures. Afterwards, reveals the type of these treasure types each round."
+  },
+  {
+    "name": "Wanwan",
+    "title": "Tiger's Eye",
+    "description": "Rounds 1-3 each reveal one detail of 3 Treasures in order: Size, Quality, and Type. At the start of each round, if 2 of the 3 details (size, quality, and type) are known for a treasure, reveals the remaining detail."
+  },
+  {
+    "name": "Vale",
+    "title": "Updraft",
+    "description": "Sequentially reveals the quality and size of all gray, green, blue and purple treasures round by round."
+  },
+  {
+    "name": "Layla",
+    "title": "Random Lock",
+    "description": "When Auction begins. randomly reveals all information of 3 treasures (Prioritizing unknown ones). Afterwards randomly reveals all information of 1 treasures each round (prioritizing unknown ones)."
+  },
+  {
+    "name": "Chou",
+    "title": "Steady Growth",
+    "description": "Round 1-4 each reveal one detail of 3 treasures in order: Quality, size, type and all information."
+  },
+  {
+    "name": "Lunox",
+    "title": "Foresight",
+    "description": "When auction begins, randomly reveals the quality of 5 treasures(prioritizing unknown ones). Afterwards, randomly reveals the quality of 2 treasures each round(prioritizing unknown ones)."
+  },
+  {
+    "name": "Lancelot",
+    "title": "Noble Family",
+    "description": "Round 1: reveals the sizes of the treasures in the last row. Round 2: Reveals the quality of the treasures in the last row. round 3 reveals the sizes of treasures in 2 random columns. round 4-5 reveals the type of treasures in 1 of those 2 column."
+  }
+]

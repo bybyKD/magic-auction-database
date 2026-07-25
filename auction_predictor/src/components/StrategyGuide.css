@@ -1,0 +1,144 @@
+.strategy-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.strategy-modal-content {
+  background: rgba(20, 20, 35, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  color: #aaa;
+  font-size: 28px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.close-btn:hover {
+  color: #fff;
+}
+
+.modal-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #ffcc00;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 15px;
+}
+
+.guide-section {
+  margin-bottom: 30px;
+}
+
+.guide-section h3 {
+  color: #a0c0ff;
+  margin-bottom: 10px;
+}
+
+.guide-section p {
+  color: #ddd;
+  line-height: 1.5;
+}
+
+.hero-highlight {
+  background: rgba(255, 200, 0, 0.1);
+  border-left: 4px solid #ffcc00;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 4px;
+}
+
+.hero-highlight h4 {
+  margin: 0 0 5px 0;
+  color: #ffcc00;
+}
+
+.round-rules-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.round-rules-list li {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 12px 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.multiplier-tag {
+  background: rgba(100, 255, 100, 0.15);
+  color: #88ff88;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.commanders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.commander-card {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.cmd-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  padding-bottom: 5px;
+}
+
+.cmd-header strong {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.cmd-title {
+  font-size: 0.8rem;
+  color: #aaa;
+  font-style: italic;
+}
+
+.cmd-desc {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin: 0;
+}
