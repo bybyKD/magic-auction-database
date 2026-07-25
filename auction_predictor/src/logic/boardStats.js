@@ -60,14 +60,42 @@ export function computeBoardStats(appraisals, clues, commanderInfoScore = 0) {
     TOTAL_SPAWN_BLOCKS - paintedBlocksCount - remainingQuantityBlocks
   );
 
-  // Commander info discount: high-info commanders reduce hidden EV uncertainty.
-  // If the commander has revealed info about hidden blocks, those blocks are
-  // partially or fully accounted for in the revealed + quantity deductions.
-  // We apply a reduction to the generic hidden estimate based on info score.
+  // Smarter hidden EV: use conditional distribution for generic blocks.
+  // If we have quantity clues, the generic blocks are constrained to colors
+  // NOT mentioned in the clues. Weight by those colors' average values.
+  // If no clues, use flat average (583/block).
+  let genericBlockValue = AVERAGE_VALUE_PER_BLOCK;
+  const unconstrainedColors = [];
+
+  if (clues && clues.colorQuantities && Object.keys(clues.colorQuantities).length > 0) {
+    // Find colors not constrained by quantity clues — these are what could be
+    // in the generic hidden blocks
+    const allColors = ['White', 'Green', 'Blue', 'Purple', 'Gold', 'Red'];
+    allColors.forEach((color) => {
+      if (!(color in clues.colorQuantities) || clues.colorQuantities[color] === 0) {
+        // This color is either unconstrained or explicitly banned
+        if (clues.colorQuantities[color] !== 0) {
+          unconstrainedColors.push(color);
+        }
+      }
+    });
+
+    if (unconstrainedColors.length > 0) {
+      // Weighted average of unconstrained colors' EVs
+      const totalWeight = unconstrainedColors.reduce(
+        (sum, c) => sum + (GENERIC_COLOR_EVS[c] || 4000),
+        0
+      );
+      genericBlockValue = totalWeight / unconstrainedColors.length;
+    }
+    // If all colors are constrained, generic blocks are empty (value = 0)
+  }
+
+  // Commander info discount: high-info commanders reduce hidden EV uncertainty
   const commanderDiscount = 1.0 - (commanderInfoScore * 0.3);
 
   let hiddenBoardEV =
-    remainingGenericHiddenBlocks * AVERAGE_VALUE_PER_BLOCK * commanderDiscount;
+    remainingGenericHiddenBlocks * genericBlockValue * commanderDiscount;
   hiddenBoardEV += extraExactValue + extraQuantityValue;
 
   let totalBoardEV = totalRevealedEV + hiddenBoardEV;
