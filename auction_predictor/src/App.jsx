@@ -8,6 +8,7 @@ import StrategyGuide from './components/StrategyGuide';
 import CommanderAssistant from './components/CommanderAssistant';
 import MLDashboard from './components/MLDashboard';
 import MatchLogger from './components/MatchLogger';
+import QuickEntry from './components/QuickEntry';
 import gameRules from './data/game_rules.json';
 import { useAppraisals } from './hooks/useAppraisals';
 import { useBoardStats } from './hooks/useBoardStats';
@@ -26,6 +27,7 @@ function App() {
   const [showGuide, setShowGuide] = useState(false);
   const [showML, setShowML] = useState(false);
   const [showLogger, setShowLogger] = useState(false);
+  const [showQuickEntry, setShowQuickEntry] = useState(false);
   const [selectedShape, setSelectedShape] = useState(null);
   const [undoCount, setUndoCount] = useState(0);
   const [redoCount, setRedoCount] = useState(0);
@@ -94,6 +96,30 @@ function App() {
   const handleClear = useCallback(() => {
     gridHistoryRef.current.push(grid);
     setGrid(Array(ROWS).fill().map(() => Array(COLS).fill(null)));
+    refreshHistoryCounts();
+  }, [grid, refreshHistoryCounts]);
+
+  const handlePlaceBlocks = useCallback((blocks) => {
+    gridHistoryRef.current.push(grid);
+    const newGrid = grid.map((row) => row.map((cell) => (cell ? { ...cell } : null)));
+    blocks.forEach(({ minR, maxR, minC, maxC, color, size }) => {
+      const groupId = Date.now().toString() + Math.random().toString(36).slice(2, 6);
+      for (let r = minR; r <= maxR; r++) {
+        for (let c = minC; c <= maxC; c++) {
+          if (r < ROWS && c < COLS) {
+            newGrid[r][c] = {
+              kind: 'Known',
+              color,
+              type: 'All',
+              groupId,
+              size,
+              isOrigin: r === minR && c === minC,
+            };
+          }
+        }
+      }
+    });
+    setGrid(newGrid);
     refreshHistoryCounts();
   }, [grid, refreshHistoryCounts]);
 
@@ -290,6 +316,13 @@ function App() {
                 >
                   ↷ Redo
                 </button>
+                <button
+                  className={`toolbar-btn ${showQuickEntry ? 'active' : ''}`}
+                  onClick={() => setShowQuickEntry(!showQuickEntry)}
+                  title="Quick coordinate entry"
+                >
+                  ⌨ Quick Entry
+                </button>
                 <button className="clear-btn toolbar-btn" onClick={handleClear}>
                   Clear Board
                 </button>
@@ -308,6 +341,12 @@ function App() {
                 selectedShape={selectedShape}
                 setSelectedShape={setSelectedShape}
               />
+              {showQuickEntry && (
+                <QuickEntry
+                  onPlaceBlocks={handlePlaceBlocks}
+                  onClose={() => setShowQuickEntry(false)}
+                />
+              )}
             </div>
 
             <div className="results-section">
