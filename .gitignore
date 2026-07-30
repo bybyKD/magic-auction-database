@@ -17,3 +17,4 @@ full_batch_*.json
 
 # Build artifacts
 *.local
+.env
