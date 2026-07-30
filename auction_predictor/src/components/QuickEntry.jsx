@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { ROWS, COLS } from '../logic/constants';
 import './QuickEntry.css';
 
-const COL_LETTERS = 'ABCDEFGHIJKL';
+const COL_LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.slice(0, COLS);
 
 const parseEntry = (input) => {
   const lines = input.trim().split('\n').filter(Boolean);

@@ -22,50 +22,52 @@ export function useBoardStats(
     [appraisals, clues, commanderInfo.infoScore]
   );
 
-  let aiPredictedBid = null;
-  let aiPredictedActualValue = null;
-  let aiConfidence = null;
+  const fullStats = useMemo(() => {
+    let aiPredictedBid = null;
+    let aiPredictedActualValue = null;
+    let aiConfidence = null;
 
-  if (auctionBrain.isTrained) {
-    const houseNorm = HOUSES[selectedHouse] || 0.5;
-    const revealedEVNorm = normalizeMoney(stats.totalRevealedEV);
-    const hiddenEVNorm = normalizeMoney(stats.hiddenBoardEV);
-    const paintedBlocksNorm = stats.paintedBlocksCount / 48.0;
+    if (auctionBrain.isTrained) {
+      const houseNorm = HOUSES[selectedHouse] || 0.5;
+      const revealedEVNorm = normalizeMoney(stats.totalRevealedEV);
+      const hiddenEVNorm = normalizeMoney(stats.hiddenBoardEV);
+      const paintedBlocksNorm = stats.paintedBlocksCount / 48.0;
 
-    const predictions = auctionBrain.predict(
-      currentRound,
-      houseNorm,
-      paintedBlocksNorm,
-      revealedEVNorm,
-      hiddenEVNorm,
-      commanderInfo.infoScore
-    );
-    aiPredictedBid = predictions.predictedBid;
-    aiPredictedActualValue = predictions.predictedActualValue;
+      const predictions = auctionBrain.predict(
+        currentRound,
+        houseNorm,
+        paintedBlocksNorm,
+        revealedEVNorm,
+        hiddenEVNorm,
+        commanderInfo.infoScore
+      );
+      aiPredictedBid = predictions.predictedBid;
+      aiPredictedActualValue = predictions.predictedActualValue;
 
-    if (stats.totalBoardEV > 0) {
-      const errorMargin =
-        Math.abs(aiPredictedActualValue - stats.totalBoardEV) /
-        stats.totalBoardEV;
-      aiConfidence = Math.max(1, Math.floor(100 - errorMargin * 100));
-    } else {
-      aiConfidence = 0;
+      if (stats.totalBoardEV > 0) {
+        const errorMargin =
+          Math.abs(aiPredictedActualValue - stats.totalBoardEV) /
+          stats.totalBoardEV;
+        aiConfidence = Math.max(1, Math.floor(100 - errorMargin * 100));
+      } else {
+        aiConfidence = 0;
+      }
     }
-  }
 
-  const fullStats = {
-    ...stats,
-    aiPredictedBid,
-    aiPredictedActualValue,
-    aiConfidence,
-    commanderInfo,
-  };
+    return {
+      ...stats,
+      aiPredictedBid,
+      aiPredictedActualValue,
+      aiConfidence,
+      commanderInfo,
+    };
+  }, [stats, selectedHouse, currentRound, commanderInfo]);
 
   useEffect(() => {
     if (onBoardStatsChange) {
       onBoardStatsChange(fullStats);
     }
-  });
+  }, [fullStats, onBoardStatsChange]);
 
   return fullStats;
 }

@@ -32,6 +32,8 @@ function App() {
   const [selectedShape, setSelectedShape] = useState(null);
   const [undoCount, setUndoCount] = useState(0);
   const [redoCount, setRedoCount] = useState(0);
+  const [toastMsg, setToastMsg] = useState(null);
+  const toastTimer = useRef(null);
 
   const [clues, setClues] = useState({
     colorQuantities: {},
@@ -51,6 +53,7 @@ function App() {
   });
 
   const gridHistoryRef = useRef(new GridHistory());
+  const groupIdCounterRef = useRef(0);
 
   const squareAppraisals = useAppraisals(grid, clues, selectedHouse);
   const { suggestions, groupConfidence } = computeSuggestions(squareAppraisals, clues, grid);
@@ -95,6 +98,43 @@ function App() {
     }
   }, [grid, refreshHistoryCounts]);
 
+  const showToast = useCallback((msg) => {
+    setToastMsg(msg);
+    if (toastTimer.current) clearTimeout(toastTimer.current);
+    toastTimer.current = setTimeout(() => setToastMsg(null), 2000);
+  }, []);
+
+  const handleSave = useCallback(() => {
+    const state = {
+      grid,
+      clues,
+      currentRound,
+      selectedHouse,
+      selectedCommander,
+    };
+    localStorage.setItem('magicAuctionBoardState', JSON.stringify(state));
+    showToast('Board saved');
+  }, [grid, clues, currentRound, selectedHouse, selectedCommander, showToast]);
+
+  const handleLoad = useCallback(() => {
+    const raw = localStorage.getItem('magicAuctionBoardState');
+    if (!raw) {
+      showToast('No saved board found');
+      return;
+    }
+    try {
+      const state = JSON.parse(raw);
+      if (state.grid) setGrid(state.grid);
+      if (state.clues) setClues(state.clues);
+      if (state.currentRound) setCurrentRound(state.currentRound);
+      if (state.selectedHouse) setSelectedHouse(state.selectedHouse);
+      if (state.selectedCommander) setSelectedCommander(state.selectedCommander);
+      showToast('Board loaded');
+    } catch {
+      showToast('Failed to load board');
+    }
+  }, [showToast]);
+
   const handleClear = useCallback(() => {
     gridHistoryRef.current.push(grid);
     setGrid(Array(ROWS).fill().map(() => Array(COLS).fill(null)));
@@ -105,7 +145,7 @@ function App() {
     gridHistoryRef.current.push(grid);
     const newGrid = grid.map((row) => row.map((cell) => (cell ? { ...cell } : null)));
     blocks.forEach(({ minR, maxR, minC, maxC, color, size }) => {
-      const groupId = Date.now().toString() + Math.random().toString(36).slice(2, 6);
+      const groupId = (++groupIdCounterRef.current).toString();
       for (let r = minR; r <= maxR; r++) {
         for (let c = minC; c <= maxC; c++) {
           if (r < ROWS && c < COLS) {
@@ -200,6 +240,7 @@ function App() {
 
   return (
     <div className="app-container">
+      {toastMsg && <div className="toast">{toastMsg}</div>}
       {showGuide && <StrategyGuide onClose={() => setShowGuide(false)} />}
       {showML && <MLDashboard onClose={() => setShowML(false)} />}
       {showLogger && (
@@ -324,6 +365,12 @@ function App() {
                   title="Quick coordinate entry"
                 >
                   ⌨ Quick Entry
+                </button>
+                <button className="toolbar-btn" onClick={handleSave} title="Save board state">
+                  Save
+                </button>
+                <button className="toolbar-btn" onClick={handleLoad} title="Load saved board state">
+                  Load
                 </button>
                 <button className="clear-btn toolbar-btn" onClick={handleClear}>
                   Clear Board

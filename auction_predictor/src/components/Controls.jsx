@@ -5,7 +5,7 @@ import commandersData from '../data/commanders.json';
 
 const colors = [
   { name: 'Bronze', css: 'Bronze' },
-  { name: 'Silver', css: 'White' },
+  { name: 'White', css: 'White' },
   { name: 'Gold', css: 'Gold' },
   { name: 'Red', css: 'Red' }
 ];
@@ -127,7 +127,7 @@ const Controls = ({ brushMode, setBrushMode, brushColor, setBrushColor, currentR
         <h3 className="control-title">⌨️ Shortcuts</h3>
         <div className="shortcuts-list">
           <div className="shortcut-row"><kbd>1</kbd> Bronze</div>
-          <div className="shortcut-row"><kbd>2</kbd> Silver</div>
+          <div className="shortcut-row"><kbd>2</kbd> White</div>
           <div className="shortcut-row"><kbd>3</kbd> Gold</div>
           <div className="shortcut-row"><kbd>4</kbd> Red</div>
           <div className="shortcut-row"><kbd>E</kbd> Mark Empty</div>

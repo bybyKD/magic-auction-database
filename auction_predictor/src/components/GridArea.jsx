@@ -6,6 +6,7 @@ const GridArea = ({ grid, setGrid, onGridChange, brushMode, brushColor, selected
   const [dragStart, setDragStart] = useState(null);
   const [dragEnd, setDragEnd] = useState(null);
   const currentGroupId = useRef(null);
+  const groupIdCounterRef = useRef(0);
 
   const ROWS = grid.length;
   const COLS = grid[0].length;
@@ -35,7 +36,7 @@ const GridArea = ({ grid, setGrid, onGridChange, brushMode, brushColor, selected
       e.preventDefault();
       const [w, h] = selectedShape.split('x').map(Number);
       const newGrid = grid.map((row) => row.map((cell) => ({ ...cell })));
-      const groupId = Date.now().toString();
+      const groupId = (++groupIdCounterRef.current).toString();
 
       for (let dr = 0; dr < h; dr++) {
         for (let dc = 0; dc < w; dc++) {
@@ -61,7 +62,7 @@ const GridArea = ({ grid, setGrid, onGridChange, brushMode, brushColor, selected
     setIsDragging(true);
     setDragStart({ r, c });
     setDragEnd({ r, c });
-    currentGroupId.current = Date.now().toString();
+    currentGroupId.current = (++groupIdCounterRef.current).toString();
 
     if (brushMode === 'Empty' || brushMode === 'Erase') {
       applyCell(r, c, brushMode);
@@ -197,48 +198,69 @@ const GridArea = ({ grid, setGrid, onGridChange, brushMode, brushColor, selected
     );
   };
 
+  const colLabels = Array.from({ length: COLS }, (_, i) =>
+    String.fromCharCode(65 + i)
+  );
+
   return (
-    <div
-      className="grid-container"
-      onMouseLeave={handleMouseUp}
-      onMouseUp={handleMouseUp}
-      onContextMenu={(e) => e.preventDefault()}
-    >
-      {grid.map((row, rIndex) =>
-        row.map((cell, cIndex) => {
-          let emptyClass = '';
-          let icon = '';
+    <div className="grid-wrapper">
+      <div className="grid-corner"></div>
+      {colLabels.map((letter, i) => (
+        <div key={`col-${i}`} className="grid-col-label">
+          {letter}
+        </div>
+      ))}
+      {grid.map((row, rIndex) => (
+        <div key={`row-${rIndex}`} className="grid-row-label">
+          {rIndex + 1}
+        </div>
+      ))}
+      <div
+        className="grid-container"
+        style={{
+          gridColumn: '2 / -1',
+          gridRow: '2 / -1',
+        }}
+        onMouseLeave={handleMouseUp}
+        onMouseUp={handleMouseUp}
+        onContextMenu={(e) => e.preventDefault()}
+      >
+        {grid.map((row, rIndex) =>
+          row.map((cell, cIndex) => {
+            let emptyClass = '';
+            let icon = '';
 
-          if (cell && cell.kind === 'Empty') {
-            emptyClass = 'cell-empty';
-            icon = '✕';
-          }
+            if (cell && cell.kind === 'Empty') {
+              emptyClass = 'cell-empty';
+              icon = '✕';
+            }
 
-          return (
-            <div
-              key={`base-${rIndex}-${cIndex}`}
-              className={`grid-cell ${emptyClass} ${selectedShape ? 'place-mode-cell' : ''}`}
-              style={{
-                gridRowStart: rIndex + 1,
-                gridColumnStart: cIndex + 1,
-              }}
-              onMouseDown={(e) => {
-                e.preventDefault();
-                handleMouseDown(rIndex, cIndex, e);
-              }}
-              onMouseEnter={(e) => {
-                e.preventDefault();
-                handleMouseEnter(rIndex, cIndex);
-              }}
-            >
-              {icon}
-            </div>
-          );
-        })
-      )}
+            return (
+              <div
+                key={`base-${rIndex}-${cIndex}`}
+                className={`grid-cell ${emptyClass} ${selectedShape ? 'place-mode-cell' : ''}`}
+                style={{
+                  gridRowStart: rIndex + 1,
+                  gridColumnStart: cIndex + 1,
+                }}
+                onMouseDown={(e) => {
+                  e.preventDefault();
+                  handleMouseDown(rIndex, cIndex, e);
+                }}
+                onMouseEnter={(e) => {
+                  e.preventDefault();
+                  handleMouseEnter(rIndex, cIndex);
+                }}
+              >
+                {icon}
+              </div>
+            );
+          })
+        )}
 
-      {renderUnifiedBlocks()}
-      {renderCurrentDragBox()}
+        {renderUnifiedBlocks()}
+        {renderCurrentDragBox()}
+      </div>
     </div>
   );
 };
