@@ -1,6 +1,6 @@
 import os
 
-dir_path = "/Users/Derio/Documents/MAGIC AUCTION DATABASE/02 Treasure Collection"
+dir_path = "data/raw"
 files = [f for f in os.listdir(dir_path) if f.endswith('.png')]
 files.sort()
 
