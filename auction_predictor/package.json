@@ -1,8 +1,25 @@
 {
-  "name": "auction_predictor",
+  "name": "magic-chess-gogo-auction",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
+  "description": "Treasure database + AI-powered predictor for the Magic Auction mini-game in Mobile Legends: Go Go",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bybyKD/magic-chess-gogo-auction.git"
+  },
+  "homepage": "https://bybykd.github.io/magic-chess-gogo-auction/",
+  "bugs": {
+    "url": "https://github.com/bybyKD/magic-chess-gogo-auction/issues"
+  },
+  "keywords": [
+    "mobile-legends",
+    "magic-auction",
+    "gogo",
+    "predictor",
+    "tensorflowjs",
+    "treasure-database"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",

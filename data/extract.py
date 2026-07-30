@@ -1,4 +1,7 @@
 import json
+import os
+
+OUTPUT_PATH = os.path.join(os.path.dirname(__file__), "treasure_database.json")
 
 data = [
     ("Magic Hero Figurine - Red", 5000000, "Collection", "2x2", "red"),
@@ -316,5 +319,5 @@ for name, price, type_, shape, color in data:
         "name_color": color
     })
 
-with open('/Users/Derio/Documents/MAGIC AUCTION DATABASE/new_items.json', 'w') as f:
+with open(OUTPUT_PATH, 'w') as f:
     json.dump(output, f, indent=2)

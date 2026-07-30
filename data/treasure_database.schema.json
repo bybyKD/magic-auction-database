@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Treasure Item",
+  "description": "A treasure item in the Magic Auction mini-game database",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "Display name of the treasure item"
+      },
+      "price": {
+        "type": "integer",
+        "minimum": 0,
+        "description": "Gold value in the auction house"
+      },
+      "type": {
+        "type": "string",
+        "enum": [
+          "Accessory",
+          "Armor",
+          "Auction Item",
+          "Collection",
+          "Food",
+          "Gem",
+          "Material",
+          "Mineral",
+          "Potion",
+          "Weapon"
+        ],
+        "description": "Item category"
+      },
+      "shape": {
+        "type": "string",
+        "pattern": "^[0-9]+x[0-9]+$",
+        "description": "Board footprint (rows x cols, e.g. '2x2')"
+      },
+      "description": {
+        "type": "string",
+        "description": "Flavor text"
+      },
+      "name_color": {
+        "type": "string",
+        "enum": ["red", "gold", "purple", "blue", "green", "gray"],
+        "description": "Color rarity tier for grid painting"
+      }
+    },
+    "required": ["name", "price", "type", "shape", "description", "name_color"],
+    "additionalProperties": false
+  }
+}
